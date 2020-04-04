@@ -1,0 +1,169 @@
+@import 'const';
+
+.title-pages {
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 50px 0 25px;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 14px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+td, tr {
+    padding: 15px 45px;
+    border: 1px solid $light-gray;
+    text-align: center;
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+tr:first-child td {
+    border: 1px solid $orange;
+    font-weight: 700;
+    color: $white;
+}
+
+tr:first-child {
+    background: $orange;
+    border: none;
+}
+
+td:nth-child(5n-4) {
+    width: 32%;
+    text-align: left;
+}
+
+.nav-tabs .nav-link.active {
+    color: $white;
+    border-radius: 0;
+    background-color: $primary-color;
+}
+
+.nav-tabs {
+    border-bottom: none;
+    margin: 50px 0;
+    width: 100%;
+}
+
+.nav-item {
+    border: 1px solid $light-gray;
+    border-radius: 0;
+}
+
+.nav-link {
+    padding: 15px 20px;
+    font-size: 14px;
+    color: $gray;
+
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+.nav-tabs .nav-link {
+    border: none; 
+    border-top-left-radius: 0; 
+    border-top-right-radius: 0; 
+}
+
+
+.visual {
+
+    img {
+        width: 480px;
+    }
+}
+
+label {
+
+    &[for="text"], &[for="letterHeight"], &[for="width-box"], &[for="height-box"], &[for="width-consoles"], &[for="height-consoles"], &[for="width-table"], &[for="height-table"] {
+        margin-top: 0;
+    }
+
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    color: $primary-color;
+
+    
+}
+
+input, select, textarea {
+    padding: 10px 20px;
+    border: $border;
+    color: $primary-color;
+    width: 100%;
+
+    &::placeholder {
+        color: $light-gray;
+    }
+}
+
+
+.minus, .plus {
+    padding-top: 5px;
+    width: 60px;
+    border: $border;
+    text-align: center;
+    cursor: pointer;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+.calc-counter {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+textarea {
+    height: 120px;
+}
+
+.calc-letter {
+    margin-top: 20px;
+}
+
+.counter {
+    display: flex;
+}
+
+#countFirst, #countSecond, #countThird {
+    display: inline-block;
+    width: 130px;
+    padding-top: 5px;
+}
+
+.gray {
+    color: $gray;
+}
+
+.price {
+    font-size: 24px;
+    margin: 20px 0 30px;
+    font-weight: 700;
+}
+
+.result {
+    font-size: 30px;
+}
+
+.orange-button {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+}
+
+

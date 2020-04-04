@@ -1,0 +1,126 @@
+.title-pages {
+  margin-bottom: 0; }
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 50px 0 25px; }
+
+table {
+  border-collapse: collapse;
+  font-size: 14px;
+  border-radius: 15px;
+  width: 100%; }
+
+td, tr {
+  padding: 15px 45px;
+  border: 1px solid #ebedec;
+  text-align: center; }
+  td a, tr a {
+    text-decoration: underline; }
+
+tr:first-child td {
+  border: 1px solid #fda12b;
+  font-weight: 700;
+  color: #f8f9fa; }
+
+tr:first-child {
+  background: #fda12b;
+  border: none; }
+
+td:nth-child(5n-4) {
+  width: 32%;
+  text-align: left; }
+
+.nav-tabs .nav-link.active {
+  color: #f8f9fa;
+  border-radius: 0;
+  background-color: #182333; }
+
+.nav-tabs {
+  border-bottom: none;
+  margin: 50px 0;
+  width: 100%; }
+
+.nav-item {
+  border: 1px solid #ebedec;
+  border-radius: 0; }
+
+.nav-link {
+  padding: 15px 20px;
+  font-size: 14px;
+  color: #979ba0; }
+  .nav-link:hover {
+    color: #182333; }
+
+.nav-tabs .nav-link {
+  border: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+.visual img {
+  width: 480px; }
+
+label {
+  font-size: 14px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  color: #182333; }
+  label[for="text"], label[for="letterHeight"], label[for="width-box"], label[for="height-box"], label[for="width-consoles"], label[for="height-consoles"], label[for="width-table"], label[for="height-table"] {
+    margin-top: 0; }
+
+input, select, textarea {
+  padding: 10px 20px;
+  border: 1px solid #ebedec;
+  color: #182333;
+  width: 100%; }
+  input::placeholder, select::placeholder, textarea::placeholder {
+    color: #ebedec; }
+
+.minus, .plus {
+  padding-top: 5px;
+  width: 60px;
+  border: 1px solid #ebedec;
+  text-align: center;
+  cursor: pointer;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none; }
+
+.calc-counter {
+  font-size: 30px;
+  font-weight: 700; }
+
+textarea {
+  height: 120px; }
+
+.calc-letter {
+  margin-top: 20px; }
+
+.counter {
+  display: flex; }
+
+#countFirst, #countSecond, #countThird {
+  display: inline-block;
+  width: 130px;
+  padding-top: 5px; }
+
+.gray {
+  color: #979ba0; }
+
+.price {
+  font-size: 24px;
+  margin: 20px 0 30px;
+  font-weight: 700; }
+
+.result {
+  font-size: 30px; }
+
+.orange-button {
+  width: 100%;
+  margin: 0;
+  text-align: left; }
+
+/*# sourceMappingURL=our-services.css.map */

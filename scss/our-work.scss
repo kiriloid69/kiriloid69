@@ -1,0 +1,40 @@
+@import 'const';
+
+.main {
+    background-color: #fff;
+    background-image: none;
+}
+
+.our-work-cart {
+    margin-top: 10px;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: $primary-color;
+}
+.nav-pills .nav-link {
+    border-radius: 0;
+    font-size: 14px;
+}
+.nav-link {
+    display: block;
+    padding: 13px 0;
+    width: 120px;
+    border: 1px solid $light-gray;
+    text-align: center;
+}
+
+a {
+    color: $gray;
+    text-decoration: none;
+    background-color: transparent;
+
+    &:hover {
+        color: $primary-color;
+    }
+}

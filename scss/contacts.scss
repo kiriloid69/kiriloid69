@@ -1,0 +1,51 @@
+@import 'const';
+
+.input-contact {
+    margin-bottom: 25px;
+    padding: 10px 20px;
+    border: $border;
+    color: $primary-color;
+    width: 100%;
+    font-size: 14px;
+    height: 50px;
+
+    &::placeholder {
+        color: $gray;
+    }
+}
+
+.orange-button {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    margin-bottom: 70px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+.row-contact {
+    display: flex;
+    margin-bottom: 25px;
+    height: 50px;
+}
+
+.icon-contact {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: $border;
+    img {
+        margin-top: 12px;
+    }
+}
+
+.contact-p {
+    margin-left: 20px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.for-par {
+    margin-top: 9px;
+}
