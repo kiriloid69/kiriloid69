@@ -344,7 +344,7 @@ header {
 }
 
 .advantage {
-  padding: 10px 35px 15px;
+  padding: 10px 25px 15px;
   border: 1px dashed #f8f9fa;
   font-weight: 500;
   font-size: 36px;
@@ -528,6 +528,14 @@ header {
   .title-section-block {
     margin: 50px 0 70px 15px;
   }
+
+  .manager {
+    background-position: -10%;
+  }
+
+  .form-action input {
+    margin-bottom: 20px;
+  }
 }
 @media screen and (max-width: 991px) {
   .menu-burger {
@@ -550,16 +558,25 @@ header {
     font-size: 48px;
     margin: 120px 0 30px;
   }
-  .main-title .location {
+
+  .location {
     font-size: 30px;
+  }
+
+  .manager {
+    background-position: -45%;
   }
 }
 @media screen and (max-width: 890px) {
   .statistics {
     background-position: 150%;
   }
+
+  .manager {
+    background-position: -80%;
+  }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .statistics {
     background-image: none;
   }
@@ -570,6 +587,10 @@ header {
 
   .title-section-block .sub-title-section {
     font-size: 14px;
+  }
+
+  .manager {
+    background-image: none;
   }
 }
 
