@@ -13,7 +13,38 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="row">
+            <div class="row menu-burger">
+                <div class="col-lg-4 col-sm-4 col-2">
+                    <nav class="burger">
+                        <a href="#" class="burger__button" id="burger-button">
+                          <span class="burger__button__icon"></span>
+                        </a>
+                        <ul class="burger__menu">
+                            <li><a href="../index.html">Главная</a></li>
+                            <li><a class="orange" href="#">О компании</a></li>
+                            <li><a href="our-services.html">Наши услуги</a></li>
+                            <li><a href="reviews.html">Отзывы</a></li>
+                            <li><a href="our-work.html">Наши работы</a></li>
+                            <li><a href="questions.html">Вопросы</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="logo col-sm-4 col-4">
+                    Media<span class="orange">Bazar</span>
+                </div>
+                <div class="col-sm-4 col-6">
+                    <div style="float: right;" class="phone">
+                        <a href="tel:106">
+                            <div class="phone-number">
+                                <img src="../img/phone-icon.png" alt="Телефон"> 8 (800) 765 78 98    
+                            </div>
+                        </a>
+                        <a class="order-call" href="№">Заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row navigation-desktop">
                 <div class="logo col-lg-2">Logo<span class="orange">Tip</span></div>
                 <nav class="nav col-lg-8">
                     <ul class="navigation">
@@ -50,26 +81,34 @@
     <section class="statistics">
         <div class="container">
             <div class="row">
-                <div class="title-section-block col-lg-12">
-                    <div class="sub-title-section">Наша статистика</div>
-                    <h2 class="title-section">Мы в цифрах</h2>
+                <div class="col-lg-12">
+                    <div class="title-section-block">
+                        <div class="sub-title-section">Наша статистика</div>
+                        <h2 class="title-section">Мы в цифрах</h2>
+                    </div>
                 </div>
             </div>
             <div class="row">
-                <div class="advantage col-lg-6">
-                    <span class="count-statistics">345+</span> <span class="padding-text">довольных клиентов</span>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="advantage">
+                        <span class="count-statistics">345+</span> <span class="padding-text">довольных клиентов</span>
+                    </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="advantage col-lg-6">
-                    <span class="count-statistics">345+</span> <span class="padding-text">довольных клиентов</span>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="advantage">
+                        <span class="count-statistics">345+</span> <span class="padding-text">довольных клиентов</span>
+                    </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="advantage col-lg-6 mb100">
-                    <span class="count-statistics">345+</span> <span class="padding-text">довольных клиентов</span>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb100">
+                    <div class="advantage">
+                        <span class="count-statistics">345+</span> <span class="padding-text">довольных клиентов</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -78,27 +117,24 @@
     <section class="manager">
         <div class="container">
             <div class="row">
-                <div class="offset-lg-5"></div>
-                <div class="title-section-block col-lg-6">
-                    <div class="sub-title-section">Директор</div>
-                    <h2 class="title-section">Анатолий Чехов</h2>
+                <div class="offset-lg-5 offset-md-5 col-12">
+                    <div class="title-section-block ">
+                        <div class="sub-title-section">Директор</div>
+                        <h2 class="title-section">Анатолий Чехов</h2>
+                    </div>
                 </div>
-                <div class="offset-lg-5"></div>
-                <div class="col-lg-6 border-left mb100">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra 
-                        maecenas accumsan.       
-                    </p>             
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra 
-                        maecenas accumsan.
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra 
-                        maecenas accumsan.
-                    </p>
+            </div>
+            <div class="row">
+                <div class="offset-lg-5 offset-md-5  "></div>
+                <div class="col-lg-6 col-lg-6 col-md-6 col-sm-12 border-left mb100">
+                        <p>Уважаемые клиенты! Я рад вас приветствовать на официальном сайте Студии Рекламы Media Bazar.</p>                        
+                        <p>Надеюсь, вы смогли здесь найти нужную информацию, а также сориентироваться в ценах. Если у вас нет времени разбираться в 
+                            особенностях конструкций и прайсах – свяжитесь с менеджерами. Они подробно расскажут про все услуги, помогут быстро рассчитать 
+                            стоимость заказа, а также при возможности предложат индивидуальную скидку!</p>
+                        <p>Также знайте, что я лично контролирую все вопросы по качеству материалов и готовых изделий. Слежу за чётким исполнением всех рабочих 
+                            процессов и поддержанием высокого уровня клиентского сервиса.</p>
+                        <p>При возникновении любых спорных ситуаций – пишите на адрес <a href="mailto:director@media-bazar.ru">director@media-bazar.ru</a></p>
+                        <p>Мы всегда открыты для сотрудничества и стараемся сделать для каждого клиента максимально выгодное предложение!</p>
                 </div>
                     
             </div>
@@ -108,12 +144,14 @@
     <section class="team">
         <div class="container">
             <div class="row">
-                <div class="title-section-block col-lg-12">
-                    <div class="sub-title-section">Наши специалисты</div>
-                    <h2 class="title-section">Наша команда</h2>
-                    <div class="arrows">
-                        <a href="#carouselEmployee" data-slide="prev"><div class="arrov-slider"><i class="far fa-2x fa-chevron-left"></i></div></a>
-                        <a href="#carouselEmployee" data-slide="next" ><div class="arrov-slider"><i class="far fa-2x fa-chevron-right"></i></div></a>
+                <div class="col-lg-12">
+                    <div class="title-section-block">
+                        <div class="sub-title-section">Наши специалисты</div>
+                        <h2 class="title-section">Наша команда</h2>
+                        <div class="arrows">
+                            <a href="#carouselEmployee" data-slide="prev"><div class="arrov-slider"><i class="far fa-2x fa-chevron-left"></i></div></a>
+                            <a href="#carouselEmployee" data-slide="next" ><div class="arrov-slider"><i class="far fa-2x fa-chevron-right"></i></div></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -121,7 +159,7 @@
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                           <div class="row">
-                            <div class="card-people col-lg-4">
+                            <div class="card-people col-lg-4 col-md-4 col-sm-12">
                                 <div class="rectangle-card">
                                     <img src="../img/valeria.png" alt="Валерия">
                                 </div>
@@ -129,7 +167,7 @@
                                 <p class="position-employee mb-0">Дизайнер</p>
                             </div>
                             
-                            <div class="card-people col-lg-4">
+                            <div class="card-people col-lg-4 col-md-4 col-sm-12">
                                 <div class="rectangle-card">
                                     <img src="../img/Vladimir.png" alt="Валерия">
                                 </div>
@@ -137,7 +175,7 @@
                                 <p class="position-employee mb-0">Директор</p>
                             </div> 
 
-                            <div class="card-people col-lg-4">
+                            <div class="card-people col-lg-4 col-md-4 col-sm-12">
                                 <div class="rectangle-card">
                                     <img src="../img/Anastasia.png" alt="Валерия">
                                 </div>
@@ -149,7 +187,7 @@
                       </div>
                       <div class="carousel-item">
                         <div class="row">
-                          <div class="card-people col-lg-4">
+                          <div class="card-people col-lg-4 col-md-4 col-sm-12">
                               <div class="rectangle-card">
                                   <img src="../img/valeria.png" alt="Валерия">
                               </div>
@@ -157,7 +195,7 @@
                               <p class="position-employee mb-0">Дизайнер</p>
                           </div>
                           
-                          <div class="card-people col-lg-4">
+                          <div class="card-people col-lg-4 col-md-4 col-sm-12">
                               <div class="rectangle-card">
                                   <img src="../img/Vladimir.png" alt="Валерия">
                               </div>
@@ -165,7 +203,7 @@
                               <p class="position-employee mb-0">Директор</p>
                           </div> 
 
-                          <div class="card-people col-lg-4">
+                          <div class="card-people col-lg-4 col-md-4 col-sm-12">
                               <div class="rectangle-card">
                                   <img src="../img/Anastasia.png" alt="Валерия">
                               </div>
@@ -190,7 +228,7 @@
                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
 
                     <li class="nav-item">
-                      <a class="nav-link active" id="all-tab" data-toggle="pill" href="#all" role="tab" aria-controls="all" aria-selected="true">Всё</a>
+                      <a class="nav-link" id="all-tab" data-toggle="pill" href="#all" role="tab" aria-controls="all" aria-selected="false">Всё</a>
                     </li>
     
                     <li class="nav-item">
@@ -202,12 +240,12 @@
                     </li>
     
                     <li class="nav-item">
-                        <a class="nav-link" id="awards-tab" data-toggle="pill" href="#awards" role="tab" aria-controls="awards" aria-selected="false">Награды</a>
+                        <a class="nav-link active" id="awards-tab" data-toggle="pill" href="#awards" role="tab" aria-controls="awards" aria-selected="true">Награды</a>
                       </li>
                 </ul>
 
                 <div class="tab-content mb100" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all">
+                    <div class="tab-pane fade" id="all" role="tabpanel" aria-labelledby="all">
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="certificate-cart">
@@ -273,7 +311,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="awards" role="tabpanel" aria-labelledby="awards">
+                    <div class="tab-pane fade active show" id="awards" role="tabpanel" aria-labelledby="awards">
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="certificate-cart">
@@ -306,73 +344,77 @@
     <section class="partners">
         <div class="container">
             <div class="row">
-                <div class="title-section-block col-lg-12">
-                    <div class="sub-title-section">Текст</div>
-                    <h2 class="title-section">Наши партнеры</h2>
-                    <div class="arrows">
-                        <a href="#carouselPartners" data-slide="prev"><div class="arrov-slider"><i class="far fa-2x fa-chevron-left"></i></div></a>
-                        <a href="#carouselPartners" data-slide="next"><div class="arrov-slider"><i class="far fa-2x fa-chevron-right"></i></div></a>
+                <div class="col-lg-12">
+                    <div class="title-section-block">
+                        <div class="sub-title-section">Текст</div>
+                        <h2 class="title-section">Наши партнеры</h2>
+                        <div class="arrows">
+                            <a href="#carouselPartners" data-slide="prev"><div class="arrov-slider"><i class="far fa-2x fa-chevron-left"></i></div></a>
+                            <a href="#carouselPartners" data-slide="next"><div class="arrov-slider"><i class="far fa-2x fa-chevron-right"></i></div></a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div id="carouselPartners" class="carousel slide col-lg-12" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                          <div class="row">
-                            <div class="card-people col-lg-3">
-                                <div class="logo-card">
-                                    <img src="../img/tinkoff.png" alt="Валерия">
+                <div class="col-lg-12">
+                    <div id="carouselPartners" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <div class="row">
+                                <div class="card-people col-lg-3 col-md-3 col-sm-6">
+                                    <div class="logo-card">
+                                        <img src="../img/tinkoff.png" alt="Валерия">
+                                    </div>
                                 </div>
-                            </div>
-                            
-                            <div class="card-people col-lg-3">
-                                <div class="logo-card">
-                                    <img src="../img/tinkoff.png" alt="Валерия">
-                                </div>
-                            </div> 
-
-                            <div class="card-people col-lg-3">
-                                <div class="logo-card">
-                                    <img src="../img/tinkoff.png" alt="Валерия">
-                                </div>
-                            </div> 
-
-                            <div class="card-people col-lg-3">
-                                <div class="logo-card">
-                                    <img src="../img/tinkoff.png" alt="Валерия">
-                                </div>
-                            </div> 
+                                
+                                <div class="card-people col-lg-3 col-md-3 col-sm-6">
+                                    <div class="logo-card">
+                                        <img src="../img/tinkoff.png" alt="Валерия">
+                                    </div>
+                                </div> 
+    
+                                <div class="card-people col-lg-3 col-md-3 col-sm-6">
+                                    <div class="logo-card">
+                                        <img src="../img/tinkoff.png" alt="Валерия">
+                                    </div>
+                                </div> 
+    
+                                <div class="card-people col-lg-3 col-md-3 col-sm-6">
+                                    <div class="logo-card">
+                                        <img src="../img/tinkoff.png" alt="Валерия">
+                                    </div>
+                                </div> 
+                              </div>
                           </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="row">
-                            <div class="card-people col-lg-3">
-                                <div class="logo-card">
-                                    <img src="../img/tinkoff.png" alt="Валерия">
+                          <div class="carousel-item">
+                            <div class="row">
+                                <div class="card-people col-lg-3 col-md-3 col-sm-6">
+                                    <div class="logo-card">
+                                        <img src="../img/tinkoff.png" alt="Валерия">
+                                    </div>
                                 </div>
+                                
+                                <div class="card-people col-lg-3 col-md-3 col-sm-6">
+                                    <div class="logo-card">
+                                        <img src="../img/tinkoff.png" alt="Валерия">
+                                    </div>
+                                </div> 
+    
+                                <div class="card-people col-lg-3 col-md-3 col-sm-6">
+                                    <div class="logo-card">
+                                        <img src="../img/tinkoff.png" alt="Валерия">
+                                    </div>
+                                </div> 
+    
+                                <div class="card-people col-lg-3 col-md-3 col-sm-6">
+                                    <div class="logo-card">
+                                        <img src="../img/tinkoff.png" alt="Валерия">
+                                    </div>
+                                </div> 
                             </div>
-                            
-                            <div class="card-people col-lg-3">
-                                <div class="logo-card">
-                                    <img src="../img/tinkoff.png" alt="Валерия">
-                                </div>
-                            </div> 
-
-                            <div class="card-people col-lg-3">
-                                <div class="logo-card">
-                                    <img src="../img/tinkoff.png" alt="Валерия">
-                                </div>
-                            </div> 
-
-                            <div class="card-people col-lg-3">
-                                <div class="logo-card">
-                                    <img src="../img/tinkoff.png" alt="Валерия">
-                                </div>
-                            </div> 
+                    </div>
                         </div>
                     </div>
-            </div>
                 </div>
             </div>
         </div>
@@ -381,26 +423,30 @@
     <section class="submit-request">
         <div class="container">
             <div class="row">
-                <div class="title-section-block col-lg-5">
-                    <div class="sub-title-section">Бесплатная консультация</div>
-                    <h2 class="title-section">Оставить заявку</h2>
+                <div class="col-lg-12">
+                    <div class="title-section-block">
+                        <div class="sub-title-section">Бесплатная консультация</div>
+                        <h2 class="title-section">Оставить заявку</h2>
+                    </div>
                 </div>    
             </div>
-                <form action="" class="form-action">
+            <div class="row">
+                <form action="" class="form-action col-lg-12">
                     <div class="row">
-                        <div class="col-lg-4"><input type="text" placeholder="Введите Ваше имя"></div>
-                        <div class="col-lg-4"><input type="text" placeholder="Введите Ваш телефон"></div>
-                        <div class="col-lg-4"><button type="submit">Отправить заявку</button></div>
+                        <div class="col-lg-4 col-md-6 col-sm-12"><input type="text" placeholder="Введите Ваше имя"></div>
+                        <div class="col-lg-4 col-md-6 col-sm-12"><input type="text"  placeholder="Введите Ваш телефон"></div>
+                        <div class="col-lg-4"><button type="submit" >Отправить заявку</button></div>
                     </div>
                 </form>
-                <p class="call-back">Наш менеджер свяжется с Вами в ближайщее время!</p>  
+                <div class="col-lg-12">
+                    <p class="call-back">Наш менеджер свяжется с Вами в ближайщее время!</p>    
+                </div>
             </div>
-        
     </section>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script> 
+    <script src="../js/script.js"></script>   
 </body>
 </html> 

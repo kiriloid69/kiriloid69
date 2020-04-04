@@ -116,6 +116,12 @@ background: linear-gradient(to bottom,  #f89e2a 0%,#f89e2a 58%,#ffffff 58%,#ffff
     text-align: center;
 }
 
+.logo-card {
+    img {
+        width: 100%;
+    }
+}
+
 .nav-pills .nav-link {
     padding: 13px 0;
     border-radius: 0;

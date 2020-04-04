@@ -165,10 +165,15 @@ a {
     margin-bottom: 0!important;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 
 body {
     font-family: $lato;
     color: $primary-color;
+    overflow-x: hidden;
 }
 
 header {
@@ -342,17 +347,15 @@ header {
 
     .title-section-block {
         border-left: 5px solid $white;
-        margin-left: 15px;
     }
 }
 
 .advantage {
-    padding: 10px 25px 15px;
+    padding: 10px 25px 0;
     border: 1px dashed $white;
     font-weight: 500;
     font-size: 36px;
     margin-bottom: 30px;
-    margin-left: 15px;
 }
 
 .mb100{
@@ -557,7 +560,7 @@ header {
 @media screen and (max-width: 1024px) {
 
     .title-section-block {
-        margin: 50px 0 70px 15px;
+        margin: 50px 0 70px 0;
     }
 
     .manager {
@@ -614,6 +617,14 @@ header {
         background-position: -80%;
     }
 
+    .rectangle-card img {
+        height: 250px;
+    }
+
+    .rectangle-card {
+        height: 200px!important;
+    }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -638,3 +649,80 @@ header {
 
 
 }
+
+@media screen and (max-width: 520px) {
+
+    .main-page{
+        background:url(../img/bg-mob.jpg); 
+        background-size: cover;
+    }   
+
+    .main-title {
+        font-size: 24px;
+        margin: 50px 0 30px;
+        text-align: center;
+    
+        .location {
+            font-size: 18px;
+        }
+    }
+
+    .sub-title {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .orange-button {
+        width: 100%;
+    }
+
+    .phone-number{
+        img {
+            display: none;
+        }
+    }
+
+    .phone{
+
+     .order-call {
+        margin-left: 0;
+     }
+    }
+
+    .orange-button {
+        margin: 25px 0 50px;
+    }
+
+    .arrows {
+        margin-right: 15px;
+        margin-top: 25px !important;
+    }
+
+    .carousel-inner {
+        margin-top: 30px !important;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .border-button {
+        padding: 0; 
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .title-section-block .title-section {
+        font-size: 30px;
+    }
+
+    .title-section-block .sub-title-section {
+        font-size: 13px;
+    }
+
+    .contact-p {
+        font-size: 16px !important;
+    }
+}
+
+

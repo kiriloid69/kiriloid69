@@ -90,6 +90,9 @@
   color: #182333;
   text-align: center; }
 
+.logo-card img {
+  width: 100%; }
+
 .nav-pills .nav-link {
   padding: 13px 0;
   border-radius: 0; }
