@@ -4,6 +4,8 @@
 
 .our-work-cart {
   margin-top: 10px; }
+  .our-work-cart img {
+    width: 100%; }
 
 .nav-item {
   margin-right: 20px; }

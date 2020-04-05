@@ -54,9 +54,18 @@
   display: none;
 }
 
+.burger__menu {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
 body.open {
   overflow: hidden;
   z-index: 0;
+  height: 100%;
 }
 body.open:before {
   visibility: visible;
@@ -79,15 +88,15 @@ body:before {
 
 .burger {
   position: fixed;
-  top: 20px;
+  top: 30px;
   z-index: 999;
 }
 .burger__button {
   display: block;
   position: relative;
   background: #182333;
-  width: 50px;
-  height: 50px;
+  width: 33px;
+  height: 33px;
   border-radius: 50%;
   text-align: center;
   transition: all 0.5s ease;
@@ -103,7 +112,7 @@ body:before {
   position: absolute;
   background: #fff;
   margin: 0 auto;
-  width: 20px;
+  width: 13.2px;
   height: 2px;
   top: 50%;
   left: 0;
@@ -116,30 +125,30 @@ body:before {
   position: absolute;
   margin: 0 auto;
   background: #fff;
-  width: 20px;
+  width: 13.2px;
   height: 2px;
   left: 0;
   right: 0;
   transition: all 0.5s ease;
 }
 .burger__button__icon:before {
-  bottom: 10px;
+  bottom: 5px;
 }
 .burger__button__icon:after {
-  top: 10px;
+  top: 5px;
 }
 .burger__button.open .burger__button__icon {
   background: transparent;
 }
 .burger__button.open .burger__button__icon:before, .burger__button.open .burger__button__icon:after {
   transform-origin: 0 50%;
-  width: sqrt(pow(20px, 2)pow(20px, 2));
+  width: sqrt(pow(13.2px, 2)pow(10px, 2));
 }
 .burger__button.open .burger__button__icon:before {
-  transform: rotateZ(atan(1));
+  transform: rotateZ(atan(0.7575757576));
 }
 .burger__button.open .burger__button__icon:after {
-  transform: rotateZ(-1);
+  transform: rotateZ(-0.7575757576);
 }
 .burger__menu {
   list-style-type: none;
@@ -158,8 +167,8 @@ body:before {
   text-decoration: none;
   color: #182333;
   font-size: 1.5rem;
-  font-family: Arial, "san-serif";
-  font-weight: normal;
+  font-size: 18px;
+  font-weight: 700;
   transition: all 0.4s ease;
   border-left: 3px solid transparent;
   padding-left: 0;
@@ -290,7 +299,6 @@ header {
   border-left: 5px solid #fda12b;
   padding-left: 25px;
   margin: 100px 0 70px;
-  margin-left: 15px;
 }
 .title-section-block .sub-title-section {
   font-size: 18px;
@@ -569,6 +577,14 @@ header {
   .manager {
     background-position: -45%;
   }
+
+  .advantage {
+    font-size: 20px;
+  }
+
+  .count-statistics {
+    font-size: 25px;
+  }
 }
 @media screen and (max-width: 890px) {
   .statistics {
@@ -603,6 +619,19 @@ header {
   .manager {
     background-image: none;
   }
+
+  .title-pages {
+    font-size: 24px !important;
+    margin: 50px 0 !important;
+  }
+
+  .card-header h5 {
+    font-size: 14px !important;
+  }
+
+  .mb100 {
+    margin-bottom: 50px !important;
+  }
 }
 @media screen and (max-width: 520px) {
   .main-page {
@@ -626,10 +655,6 @@ header {
 
   .orange-button {
     width: 100%;
-  }
-
-  .phone-number img {
-    display: none;
   }
 
   .phone .order-call {
@@ -666,6 +691,45 @@ header {
 
   .contact-p {
     font-size: 16px !important;
+  }
+
+  .card-body {
+    font-size: 12px !important;
+  }
+
+  .call-back {
+    font-size: 14px !important;
+    text-align: center;
+  }
+
+  .title-pages {
+    font-size: 24px !important;
+    margin: 25px 0 !important;
+  }
+
+  .mb100 {
+    margin-bottom: 20px !important;
+  }
+
+  .title-section-block {
+    margin: 25px 0 30px !important;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .phone .phone-number {
+    font-size: 13px;
+  }
+
+  .phone .order-call {
+    font-size: 11px;
+  }
+
+  .card-header h5 {
+    font-size: 12px !important;
+    letter-spacing: -0.3px !important;
   }
 }
 

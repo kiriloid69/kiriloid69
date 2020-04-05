@@ -59,7 +59,7 @@ td:nth-child(5n-4) {
   border-top-right-radius: 0; }
 
 .visual img {
-  width: 480px; }
+  width: 100%; }
 
 label {
   font-size: 14px;
