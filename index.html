@@ -9,39 +9,43 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <div class="menu-burger-block">
+        <div class="container">
+                <div class="row menu-burger">
+                    <div class="col-lg-4 col-sm-4 col-2">
+                        <nav class="burger">
+                            <a href="#" class="burger__button" id="burger-button">
+                              <span class="burger__button__icon"></span>
+                            </a>
+                            <ul class="burger__menu">
+                                <li><a class="orange" href="#">Главная</a></li>
+                                <li><a href="pages/about.html">О компании</a></li>
+                                <li><a href="pages/our-services.html">Наши услуги</a></li>
+                                <li><a href="pages/reviews.html">Отзывы</a></li>
+                                <li><a href="pages/our-work.html">Наши работы</a></li>
+                                <li><a href="pages/questions.html">Вопросы</a></li>
+                                <li><a href="pages/contacts.html">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="logo col-sm-4 col-4">
+                        Media<span class="orange">Bazar</span>
+                    </div>
+                    <div class="col-sm-4 col-6">
+                        <div style="float: right;" class="phone">
+                            <a href="tel:106">
+                                <div class="phone-number">
+                                    <img src="img/phone-icon.png" alt="Телефон"> 8 (800) 765 78 98    
+                                </div>
+                            </a>
+                            <a class="order-call" href="№">Заказать звонок</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <div class="container">
-            <div class="row menu-burger">
-                <div class="col-lg-4 col-sm-4 col-2">
-                    <nav class="burger">
-                        <a href="#" class="burger__button" id="burger-button">
-                          <span class="burger__button__icon"></span>
-                        </a>
-                        <ul class="burger__menu">
-                            <li><a class="orange" href="#">Главная</a></li>
-                            <li><a href="pages/about.html">О компании</a></li>
-                            <li><a href="pages/our-services.html">Наши услуги</a></li>
-                            <li><a href="pages/reviews.html">Отзывы</a></li>
-                            <li><a href="pages/our-work.html">Наши работы</a></li>
-                            <li><a href="pages/questions.html">Вопросы</a></li>
-                            <li><a href="pages/contacts.html">Контакты</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="logo col-sm-4 col-4">
-                    Media<span class="orange">Bazar</span>
-                </div>
-                <div class="col-sm-4 col-6">
-                    <div style="float: right;" class="phone">
-                        <a href="tel:106">
-                            <div class="phone-number">
-                                <img src="img/phone-icon.png" alt="Телефон"> 8 (800) 765 78 98    
-                            </div>
-                        </a>
-                        <a class="order-call" href="№">Заказать звонок</a>
-                    </div>
-                </div>
-            </div>
             <div class="row navigation-desktop">
                 <div class="logo col-lg-2">Media<span class="orange">Bazar</span></div>
                 <nav class="nav col-lg-8">
@@ -271,13 +275,15 @@
                 </div>    
             </div>
             <div class="row">
-                <form action="" class="form-action col-lg-12">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-12"><input type="text" placeholder="Введите Ваше имя"></div>
-                        <div class="col-lg-4 col-md-6 col-sm-12"><input type="text"  placeholder="Введите Ваш телефон"></div>
-                        <div class="col-lg-4"><button type="submit" >Отправить заявку</button></div>
-                    </div>
-                </form>
+                <div class="col-lg-12">
+                    <form action="" class="form-action">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12"><input type="text" placeholder="Введите Ваше имя"></div>
+                            <div class="col-lg-4 col-md-6 col-sm-12"><input type="text"  placeholder="Введите Ваш телефон"></div>
+                            <div class="col-lg-4"><button type="submit" >Отправить заявку</button></div>
+                        </div>
+                    </form>
+                </div>
                 <div class="col-lg-12">
                     <p class="call-back">Наш менеджер свяжется с Вами в ближайщее время!</p>    
                 </div>

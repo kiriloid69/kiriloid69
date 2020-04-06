@@ -1,8 +1,18 @@
 @import 'const';
 @import 'fonts';
 
-.menu-burger {
+.menu-burger-block {
+    position: fixed;
+    background-color: $white;
+    width: 100%;
+    height: 100px;
+    z-index: 99;
     display: none;
+    border-bottom: $border;
+
+    .menu-burger {
+        margin-top: 30px;
+    }
 }
 
 .burger__menu {
@@ -20,7 +30,7 @@ $burger-gutter: 5px;
 
 body {
   &.open {
-    overflow: hidden;
+    overflow: hidden !important;
     z-index: 0;
     height: 100%;
     
@@ -177,14 +187,14 @@ a {
 }
 
 html {
-    overflow-x: hidden;
+   
 }
 
 
 body {
     font-family: $lato;
     color: $primary-color;
-    overflow-x: hidden;
+    
 }
 
 header {
@@ -462,9 +472,7 @@ header {
     input {
         padding: 15px 20px;
         font-size: 14px;    
-        width: 350px;
         border: $border;
-        margin-right: 30px;
         width: 100%;
 
         &::placeholder {
@@ -586,7 +594,7 @@ header {
 }
 
 @media screen and (max-width: 991px) {
-    .menu-burger {
+    .menu-burger-block {
         display: flex;
     }
 
