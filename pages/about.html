@@ -6,44 +6,48 @@
     <title>LogoTip – О компании</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/about.css">
 </head>
 <body>
+    <div class="menu-burger-block">
+        <div class="container">
+                <div class="row menu-burger">
+                    <div class="col-lg-4 col-sm-4 col-2">
+                        <nav class="burger">
+                            <a href="#" class="burger__button" id="burger-button">
+                              <span class="burger__button__icon"></span>
+                            </a>
+                            <ul class="burger__menu">
+                                <li><a href="../index.html">Главная</a></li>
+                                <li><a class="orange" href="#">О компании</a></li>
+                                <li><a href="our-services.html">Наши услуги</a></li>
+                                <li><a href="reviews.html">Отзывы</a></li>
+                                <li><a href="questions.html">Вопросы</a></li>
+                                <li><a href="our-work.html">Наши работы</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="logo col-sm-4 col-4">
+                        Media<span class="orange">Bazar</span>
+                    </div>
+                    <div class="col-sm-4 col-6">
+                        <div style="float: right;" class="phone">
+                            <a href="tel:106">
+                                <div class="phone-number">
+                                    <img src="../img/phone-icon.png" alt="Телефон"> 8 (800) 765 78 98    
+                                </div>
+                            </a>
+                            <a class="order-call" href="№">Заказать звонок</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <div class="container">
-            <div class="row menu-burger">
-                <div class="col-lg-4 col-sm-4 col-2">
-                    <nav class="burger">
-                        <a href="#" class="burger__button" id="burger-button">
-                          <span class="burger__button__icon"></span>
-                        </a>
-                        <ul class="burger__menu">
-                            <li><a href="../index.html">Главная</a></li>
-                            <li><a class="orange" href="#">О компании</a></li>
-                            <li><a href="our-services.html">Наши услуги</a></li>
-                            <li><a href="reviews.html">Отзывы</a></li>
-                            <li><a href="our-work.html">Наши работы</a></li>
-                            <li><a href="questions.html">Вопросы</a></li>
-                            <li><a href="contacts.html">Контакты</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="logo col-sm-4 col-4">
-                    Media<span class="orange">Bazar</span>
-                </div>
-                <div class="col-sm-4 col-6">
-                    <div style="float: right;" class="phone">
-                        <a href="tel:106">
-                            <div class="phone-number">
-                                <img src="../img/phone-icon.png" alt="Телефон"> 8 (800) 765 78 98    
-                            </div>
-                        </a>
-                        <a class="order-call" href="№">Заказать звонок</a>
-                    </div>
-                </div>
-            </div>
             <div class="row navigation-desktop">
                 <div class="logo col-lg-2">Logo<span class="orange">Tip</span></div>
                 <nav class="nav col-lg-8">
@@ -117,7 +121,8 @@
     <section class="manager">
         <div class="container">
             <div class="row">
-                <div class="offset-lg-5 offset-md-5 col-12">
+                <div class="offset-lg-5 offset-md-5"></div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="title-section-block ">
                         <div class="sub-title-section">Директор</div>
                         <h2 class="title-section">Анатолий Чехов</h2>
@@ -125,8 +130,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="offset-lg-5 offset-md-5  "></div>
-                <div class="col-lg-6 col-lg-6 col-md-6 col-sm-12 border-left mb100">
+                <div class="offset-lg-5 offset-md-5"></div>
+                <div class="col-lg-6 col-md-6 col-sm-12 border-left mb100">
                         <p>Уважаемые клиенты! Я рад вас приветствовать на официальном сайте Студии Рекламы Media Bazar.</p>                        
                         <p>Надеюсь, вы смогли здесь найти нужную информацию, а также сориентироваться в ценах. Если у вас нет времени разбираться в 
                             особенностях конструкций и прайсах – свяжитесь с менеджерами. Они подробно расскажут про все услуги, помогут быстро рассчитать 
@@ -149,8 +154,8 @@
                         <div class="sub-title-section">Наши специалисты</div>
                         <h2 class="title-section">Наша команда</h2>
                         <div class="arrows">
-                            <a href="#carouselEmployee" data-slide="prev"><div class="arrov-slider"><i class="far fa-2x fa-chevron-left"></i></div></a>
-                            <a href="#carouselEmployee" data-slide="next" ><div class="arrov-slider"><i class="far fa-2x fa-chevron-right"></i></div></a>
+                            <a href="#carouselEmployee" data-slide="prev"><div class="arrov-slider"><i class="far fa-2x fa-angle-left"></i></div></a>
+                            <a href="#carouselEmployee" data-slide="next" ><div class="arrov-slider"><i class="far fa-2x fa-angle-right"></i></div></a>
                         </div>
                     </div>
                 </div>
@@ -356,8 +361,8 @@
                         <div class="sub-title-section">Текст</div>
                         <h2 class="title-section">Наши партнеры</h2>
                         <div class="arrows">
-                            <a href="#carouselPartners" data-slide="prev"><div class="arrov-slider"><i class="far fa-2x fa-chevron-left"></i></div></a>
-                            <a href="#carouselPartners" data-slide="next"><div class="arrov-slider"><i class="far fa-2x fa-chevron-right"></i></div></a>
+                            <a href="#carouselPartners" data-slide="prev"><div class="arrov-slider"><i class="far fa-2x fa-angle-left"></i></div></a>
+                            <a href="#carouselPartners" data-slide="next"><div class="arrov-slider"><i class="far fa-2x fa-angle-right"></i></div></a>
                         </div>
                     </div>
                 </div>
