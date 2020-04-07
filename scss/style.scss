@@ -202,6 +202,10 @@ header {
     min-height: 100px;
     padding: 30px 0;
     border-bottom: $border;
+    position: fixed;
+    background: $white;
+    width: 100%;
+    z-index: 1;
 }
 
 .logo {
@@ -279,6 +283,7 @@ header {
     background-position: right;
     background-size: contain;
     color: $white;
+    padding-top: 100px;
 }
 
 .main-title {
@@ -516,6 +521,7 @@ header {
 
 .breadcrumbs {
     border-bottom: $border;
+    padding-top: 100px;
 }
 
 .breadcrumb {
