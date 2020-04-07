@@ -564,6 +564,13 @@ header {
   .form-action input {
     margin-bottom: 20px;
   }
+
+  .rectangle-card {
+    height: 165px !important;
+  }
+  .rectangle-card img {
+    height: 115%;
+  }
 }
 @media screen and (max-width: 991px) {
   .menu-burger-block {
@@ -601,6 +608,21 @@ header {
 
   .count-statistics {
     font-size: 25px;
+  }
+
+  .rectangle-card {
+    height: 130px !important;
+  }
+  .rectangle-card img {
+    height: 120%;
+  }
+
+  .name-employee {
+    font-size: 18px !important;
+  }
+
+  .position-employee {
+    font-size: 14px !important;
   }
 }
 @media screen and (max-width: 890px) {

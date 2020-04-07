@@ -6,6 +6,7 @@
     <title>MediaBazar – Контакты</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/reviews.css">
 </head>
@@ -108,11 +109,29 @@
                             <a class="nav-link" id="text-tab" data-toggle="pill" href="#text" role="tab" aria-controls="text" aria-selected="false">Текст</a>
                           </li>
                     </ul>
+                    <div class="arrows">
+                        <a href="#carouselEmployee" data-slide="prev"><div class="arrov-slider"><i class="far fa-2x fa-angle-left"></i></div></a>
+                        <a href="#carouselEmployee" data-slide="next"><div class="arrov-slider"><i class="far fa-2x fa-angle-right"></i></div></a>
+                    </div>
                 </div>
+            
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    
+                    <div class="tab-content mb100" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="video" role="tabpanel" aria-labelledby="video-tab">
+                            <iframe width="100%" height="420" src="https://www.youtube.com/embed/2lAe1cqCOXo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="audio" role="tabpanel" aria-labelledby="audio-tab">
+                            <iframe width="100%" height="420" src="https://www.youtube.com/embed/DyDfgMOUjCI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="tab-pane fade" id="photo" role="tabpanel" aria-labelledby="photo-tab">
+                            <iframe width="100%" height="420" src="https://www.youtube.com/embed/DmWWqogr_r8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                        </div>
+                        <div class="tab-pane fade" id="text" role="tabpanel" aria-labelledby="text-tab">
+                            <iframe width="100%" height="420" src="https://www.youtube.com/embed/r_0JjYUe5jo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>   
                 </div>
             </div>
         </div>

@@ -10,13 +10,14 @@
     margin-right: 15px;
 }
 
-.arrov-slider {
+.arrow-slider {
     border: $border;
     height: 50px;
     width: 50px;
     text-align: center;
     margin-left: 20px;
     background-color: $white;
+    cursor: pointer;
 
     i {
         color: $gray;

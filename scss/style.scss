@@ -611,6 +611,16 @@ header {
         }
     }
 
+
+    .rectangle-card {
+
+        height: 165px!important;
+
+        img {
+            height: 115%;
+        }
+    }
+
 }
 
 @media screen and (max-width: 991px) {
@@ -649,6 +659,23 @@ header {
 
     .count-statistics {
         font-size: 25px;
+    }
+
+    .rectangle-card {
+        
+        height: 130px!important;
+
+        img {
+            height: 120%;
+        }
+    }
+
+    .name-employee {
+        font-size: 18px !important;
+    }
+
+    .position-employee {
+        font-size: 14px !important;
     }
 
 }

@@ -6,21 +6,22 @@
   float: right;
   margin-right: 15px; }
 
-.arrov-slider {
+.arrow-slider {
   border: 1px solid #ebedec;
   height: 50px;
   width: 50px;
   text-align: center;
   margin-left: 20px;
-  background-color: #f8f9fa; }
-  .arrov-slider i {
+  background-color: #f8f9fa;
+  cursor: pointer; }
+  .arrow-slider i {
     color: #979ba0;
     line-height: 1.45; }
-  .arrov-slider:hover {
+  .arrow-slider:hover {
     background-color: #fda12b;
     border: 1px solid #fda12b;
     transition: .2s; }
-    .arrov-slider:hover i {
+    .arrow-slider:hover i {
       color: #f8f9fa; }
 
 .card-people {

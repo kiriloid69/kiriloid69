@@ -1,3 +1,29 @@
+.tab-content {
+  margin-top: 15px; }
+
+.arrows {
+  display: flex;
+  float: right;
+  margin-right: 15px;
+  margin-top: -66px; }
+
+.arrov-slider {
+  border: 1px solid #ebedec;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  margin-left: 20px;
+  background-color: transparent; }
+  .arrov-slider i {
+    color: #979ba0;
+    line-height: 1.45; }
+  .arrov-slider:hover {
+    background-color: #fda12b;
+    border: 1px solid #fda12b;
+    transition: .2s; }
+    .arrov-slider:hover i {
+      color: #f8f9fa; }
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #f8f9fa;
   background-color: #182333; }
