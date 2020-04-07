@@ -1,0 +1,72 @@
+a {
+  color: #182333; }
+
+.input-contact {
+  margin-bottom: 25px;
+  padding: 10px 20px;
+  border: 1px solid #ebedec;
+  color: #182333;
+  width: 100%;
+  font-size: 14px;
+  height: 50px; }
+  .input-contact::placeholder {
+    color: #979ba0; }
+
+.orange-button {
+  width: 100%;
+  margin: 0;
+  text-align: left;
+  margin-bottom: 70px;
+  height: 50px;
+  padding: 0 20px; }
+
+.row-contact {
+  display: flex;
+  margin-bottom: 25px;
+  height: 50px; }
+
+.icon-contact {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #ebedec; }
+  .icon-contact img {
+    margin-top: 12px; }
+
+.contact-p {
+  margin-left: 20px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 600; }
+
+.for-par {
+  margin-top: 9px; }
+
+@media screen and (max-width: 1024px) {
+  .title-pages {
+    font-size: 30px;
+    margin: 50px 0 30px !important; }
+
+  .contact-p {
+    font-size: 14px; }
+
+  .for-par {
+    margin-top: 14px; } }
+@media screen and (max-width: 425px) {
+  .title-pages {
+    color: #182333;
+    border-left: 5px solid #fda12b;
+    padding-left: 25px;
+    font-size: 24px;
+    margin: 50px 0 30px; }
+
+  .orange-button {
+    margin-bottom: 20px; }
+
+  .map iframe {
+    height: 130px; } }
+@media screen and (max-width: 375px) {
+  .contact-p {
+    margin-left: 10px; } }
+
+/*# sourceMappingURL=contacts.css.map */
