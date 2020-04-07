@@ -1,77 +1,3 @@
-$('#headingOne').click(function(){
-    if ($('#headingOne').hasClass('active-question')){
-        $(".card-header").removeClass("active-question")
-        $("#plus-icon1").text("+")
-    } else {
-        $(".card-header").removeClass("active-question")
-        $("#headingOne").addClass("active-question")
-        $(".plus-icon").text("+")
-        $("#plus-icon1").text("—")
-    }
-});
-
-$('#headingTwo').click(function(){
-    if ($('#headingTwo').hasClass('active-question')){
-        $(".card-header").removeClass("active-question")
-        $("#plus-icon2").text("+")
-    } else {
-        $(".card-header").removeClass("active-question")
-        $("#headingTwo").addClass("active-question")
-        $(".plus-icon").text("+")
-        $("#plus-icon2").text("—")
-    }
-});
-
-$('#headingThree').click(function(){
-    if ($('#headingThree').hasClass('active-question')){
-        $(".card-header").removeClass("active-question")
-        $("#plus-icon3").text("+")
-    } else {
-        $(".card-header").removeClass("active-question")
-        $("#headingThree").addClass("active-question")
-        $(".plus-icon").text("+")
-        $("#plus-icon3").text("—")
-    }
-});
-
-$('#headingFour').click(function(){
-    if ($('#headingFour').hasClass('active-question')){
-        $(".card-header").removeClass("active-question")
-        $("#plus-icon4").text("+")
-    } else {
-        $(".card-header").removeClass("active-question")
-        $("#headingFour").addClass("active-question")
-        $(".plus-icon").text("+")
-        $("#plus-icon4").text("—")
-    }
-});
-
-$('#headingFive').click(function(){
-    if ($('#headingFive').hasClass('active-question')){
-        $(".card-header").removeClass("active-question")
-        $("#plus-icon5").text("+")
-    } else {
-        $(".card-header").removeClass("active-question")
-        $("#headingFive").addClass("active-question")
-        $(".plus-icon").text("+")
-        $("#plus-icon5").text("—")
-    }
-});
-
-$('#headingSix').click(function(){
-    if ($('#headingSix').hasClass('active-question')){
-        $(".card-header").removeClass("active-question")
-        $("#plus-icon6").text("+")
-    } else {
-        $(".card-header").removeClass("active-question")
-        $("#headingSix").addClass("active-question")
-        $(".plus-icon").text("+")
-        $("#plus-icon6").text("—")
-    }
-});
-
-
-
 
 // calculator
 
@@ -113,8 +39,6 @@ function calcLightLetters() {
 
     function counter() {
 
-        document.querySelector('#countFirst').value = count;
-
         add.onclick = () => {
             count++;
             document.querySelector('#countFirst').value = count;
@@ -154,6 +78,7 @@ function calcLightBox() {
     let width, height, type,  resultSecond, add, deduct, count;
 
     getValuesSec();
+    counterSec();
     calcResultSec();
     showResultSec();
 
@@ -181,11 +106,15 @@ function calcLightBox() {
     }
 
     function counterSec() {
+
         add.onclick = () => {
             count++;
             document.querySelector('#countSecond').value = count;
         };
-        if( count >= 0){
+
+        if (count == 1)
+            document.querySelector('#countSecond').value = 1;
+        else {
             deduct.onclick = () => {
                 count--;
                 document.querySelector('#countSecond').value = count;
@@ -217,6 +146,7 @@ function calcLightConsole() {
     let width, height, type,  resultThird, add, deduct, count;
 
     getValuesThird();
+    counterThird();
     calcResultThird();
     showResultThird();
 
@@ -244,14 +174,19 @@ function calcLightConsole() {
     }
 
     function counterThird() {
+        
         add.onclick = () => {
             count++;
             document.querySelector('#countThird').value = count;
         };
-        deduct.onclick = () => {
-            count--;
-            document.querySelector('#countThird').value = count;
-        };
+        if (count == 1)
+            document.querySelector('#countThird').value = 1;
+        else {
+            deduct.onclick = () => {
+                count--;
+                document.querySelector('#countThird').value = count;
+            };
+        }   
     }
 
     function calcResultThird() {
@@ -279,6 +214,7 @@ function calcTable() {
     let width, height, type, resultFourth, add, deduct, count;
 
     getValuesFourth();
+    counterFourth();
     calcResultFourth();
     showResultFourth();
 
@@ -306,14 +242,20 @@ function calcTable() {
     }
 
     function counterFourth() {
+
         add.onclick = () => {
             count++;
             document.querySelector('#countFourth').value = count;
         };
-        deduct.onclick = () => {
-            count--;
-            document.querySelector('#countFourth').value = count;
-        };
+        if (count == 1)
+            document.querySelector('#countFourth').value = 1;
+        else {
+            deduct.onclick = () => {
+                count--;
+                document.querySelector('#countFourth').value = count;
+            };
+        }         
+     
     }
 
     function calcResultFourth() {

@@ -207,6 +207,10 @@ header {
 .logo {
     font-size: 24px;
     font-weight: 900;
+
+    a {
+        color: $primary-color;
+    }
 }
 
 .orange {
@@ -240,6 +244,8 @@ header {
 
     text-align: center;
     margin-top: -5px;
+    border-left: $border;
+    padding-left: 20px;
 
     a {
         color: $primary-color;
@@ -498,7 +504,6 @@ header {
     .call-back {
         font-size: 18px;
         // visibility: hidden;
-        padding-bottom: 100px;
     }
 }
 
@@ -546,9 +551,17 @@ header {
         margin: 0 5px;
     }
 
-    .phone .phone-number {
-        font-size: 14px;
+    .phone {
+        .phone-number {
+            font-size: 13px;
+        }
+
+        .order-call {
+            font-size: 13px;
+        }
     }
+
+    
 
     .main-page {
         background-image: url(../img/bg-tablet.jpg);
@@ -641,7 +654,7 @@ header {
     }
 
     .manager {
-        background-position: -80%;
+        background-position: -60%;
     }
 
     .rectangle-card img {
@@ -654,7 +667,7 @@ header {
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
 
 .statistics {
@@ -676,7 +689,7 @@ header {
 
 .title-pages {
     font-size: 24px !important;
-    margin: 50px 0 !important;
+    margin: 50px 0 30px !important;
 }
 
 .card-header h5 {
@@ -690,9 +703,10 @@ header {
 
 
 
+
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 575px) {
 
     .main-page{
         background:url(../img/bg-mob.jpg); 
@@ -739,6 +753,33 @@ header {
     }
 }
 
+@media screen and (max-width: 475px) {
+
+    .phone { 
+        
+        .phone-number {
+            font-size: 12px;
+        }
+
+        .order-call {
+            font-size: 11px;
+        }
+
+    }
+
+    .border-button {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .border-button {
+        padding: 0;
+    }
+
+
+}
+
+
 
 @media screen and (max-width: 400px) {
 
@@ -757,7 +798,7 @@ header {
     }
 
     .contact-p {
-        font-size: 16px !important;
+        font-size: 14px !important;
     }
 
     .card-body {
@@ -787,11 +828,11 @@ header {
     }
 
     .phone .phone-number {
-        font-size: 13px;
+        font-size: 11px;
     }
 
     .phone .order-call {
-        font-size: 11px;
+        font-size: 10px;
     }
 
     .card-header h5 {
@@ -801,3 +842,21 @@ header {
 }
 
 
+@media screen and (max-width: 375px) {
+
+    .phone {
+        .phone-number {
+            img{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .phone .phone-number {
+        font-size: 10px;
+}
+
+}

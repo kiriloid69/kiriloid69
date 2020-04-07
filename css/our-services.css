@@ -1,7 +1,7 @@
 .title-pages {
   margin-bottom: 0; }
 
-h2 {
+.name-service {
   font-size: 18px;
   font-weight: 700;
   margin: 50px 0 25px; }
@@ -9,11 +9,10 @@ h2 {
 table {
   border-collapse: collapse;
   font-size: 14px;
-  border-radius: 15px;
   width: 100%; }
 
 td, tr {
-  padding: 15px 45px;
+  padding: 15px 30px;
   border: 1px solid #ebedec;
   text-align: center; }
   td a, tr a {
@@ -32,6 +31,13 @@ td:nth-child(5n-4) {
   width: 32%;
   text-align: left; }
 
+.indications {
+  margin-top: 15px; }
+
+.indication {
+  font-size: 14px;
+  margin-bottom: 0; }
+
 .nav-tabs .nav-link.active {
   color: #f8f9fa;
   border-radius: 0;
@@ -47,7 +53,7 @@ td:nth-child(5n-4) {
   border-radius: 0; }
 
 .nav-link {
-  padding: 15px 20px;
+  padding: 15px 32.8px;
   font-size: 14px;
   color: #979ba0; }
   .nav-link:hover {
@@ -79,6 +85,9 @@ input, select, textarea {
   input::placeholder, select::placeholder, textarea::placeholder {
     color: #ebedec; }
 
+.count-pieces {
+  width: 120px; }
+
 .minus, .plus {
   padding-top: 5px;
   width: 60px;
@@ -102,7 +111,7 @@ textarea {
 .counter {
   display: flex; }
 
-#countFirst, #countSecond, #countThird {
+.count-pieces {
   display: inline-block;
   width: 130px;
   padding-top: 5px; }
@@ -122,5 +131,15 @@ textarea {
   width: 100%;
   margin: 0;
   text-align: left; }
+
+@media screen and (max-width: 768px) {
+  td, tr {
+    padding: 15px 0;
+    font-size: 12px;
+    border: 1px solid #ebedec; }
+
+  td:nth-child(5n-4) {
+    width: 25%;
+    padding-left: 15px; } }
 
 /*# sourceMappingURL=our-services.css.map */
