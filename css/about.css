@@ -3,8 +3,7 @@
 
 .arrows {
   display: flex;
-  float: right;
-  margin-right: 15px; }
+  float: right; }
 
 .arrow-slider {
   border: 1px solid #ebedec;
