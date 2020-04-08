@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LogoTip – О компании</title>
+    <title>MediaBazar – О компании</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
@@ -56,7 +56,22 @@
                     <ul class="navigation">
                         <li class="navigation-item"><a href="../index.html">Главная</a></li>
                         <li class="navigation-item"><a class="orange" href="#">О компании</a></li>
-                        <li class="navigation-item"><a href="our-services.html">Наши услуги</a></li>
+                        <li class="navigation-item">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Наши услуги</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="our-services.html#wid-print">Широкоформатная печать</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="our-services.html">Ламинация</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="our-services.html">Дизайн рекламы</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="our-services.html">Монтаж</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="our-services.html">Дизайн</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="our-services.html">Изготовление картин</a>
+                            </div>
+                        </li>
                         <li class="navigation-item"><a href="reviews.html">Отзывы</a></li>
                         <li class="navigation-item"><a href="our-work.html">Наши работы</a></li>
                         <li class="navigation-item"><a href="questions.html">Вопросы</a></li>
@@ -163,7 +178,7 @@
                 </div>
             </div>
 
-            <div class="slider-personal row">
+            <div class="slider-team row">
                     <div class="card-people col-lg-4">
                         <div class="rectangle-card">
                             <img src="../img/valeria.png" alt="Валерия">
@@ -221,10 +236,10 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
 
                         <li class="nav-item">
-                          <a class="nav-link" id="all-tab" data-toggle="pill" href="#all" role="tab" aria-controls="all" aria-selected="false">Всё</a>
+                          <a class="nav-link active" id="all-tab" data-toggle="pill" href="#all" role="tab" aria-controls="all" aria-selected="false">Всё</a>
                         </li>
         
                         <li class="nav-item">
@@ -236,21 +251,38 @@
                         </li>
         
                         <li class="nav-item">
-                            <a class="nav-link active" id="awards-tab" data-toggle="pill" href="#awards" role="tab" aria-controls="awards" aria-selected="true">Награды</a>
-                          </li>
+                            <a class="nav-link" id="awards-tab" data-toggle="pill" href="#awards" role="tab" aria-controls="awards" aria-selected="true">Награды</a>
+                        </li>
+
+                        <div class="arrows arrows-tabs">
+                            <div id="ar-cert-lf" class="arrow-slider"><i class="far fa-2x fa-angle-left"></i></div>
+                            <div id="ar-cert-rg" class="arrow-slider"><i class="far fa-2x fa-angle-right"></i></div>
+                        </div>
                     </ul>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="tab-content mb100" id="pills-tabContent">
-                        <div class="tab-pane fade" id="all" role="tabpanel" aria-labelledby="all">
-                            <div class="row">
+                        <div class="tab-pane fade active show" id="all" role="tabpanel" aria-labelledby="all">
+                            <div class="slider-all-items row">
                                 <div class="col-lg-4">
                                     <div class="certificate-cart">
                                         <img src="../img/certificates.png" alt="сертификат 1">
                                     </div>
                                     <p class="name-certificate">Сертификат 1</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="certificate-cart">
+                                        <img src="../img/certificates.png" alt="сертификат 1">
+                                    </div>
+                                    <p class="name-certificate">Сертификат 2</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="certificate-cart">
+                                        <img src="../img/certificates.png" alt="сертификат 3">
+                                    </div>
+                                    <p class="name-certificate">Сертификат 3</p>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="certificate-cart">
@@ -260,14 +292,20 @@
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="certificate-cart">
-                                        <img src="../img/certificates.png" alt="сертификат 3">
+                                        <img src="../img/certificates.png" alt="сертификат 2">
                                     </div>
-                                    <p class="name-certificate">Сертификат 2</p>
+                                    <p class="name-certificate">Награда 2</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="certificate-cart">
+                                        <img src="../img/certificates.png" alt="сертификат 2">
+                                    </div>
+                                    <p class="name-certificate">Награда 3</p>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="certificates" role="tabpanel" aria-labelledby="certificates">
-                            <div class="row">
+                            <div class="slider-certificates row">
                                 <div class="col-lg-4">
                                     <div class="certificate-cart">
                                         <img src="../img/certificates.png" alt="сертификат 1">
@@ -286,10 +324,23 @@
                                     </div>
                                     <p class="name-certificate">Сертификат 3</p>
                                 </div>
+                                <div class="col-lg-4">
+                                    <div class="certificate-cart">
+                                        <img src="../img/certificates.png" alt="сертификат 3">
+                                    </div>
+                                    <p class="name-certificate">Сертификат 4</p>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="certificate-cart">
+                                        <img src="../img/certificates.png" alt="сертификат 3">
+                                    </div>
+                                    <p class="name-certificate">Сертификат 5</p>
+                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="diplomas" role="tabpanel" aria-labelledby="diplomas">
-                            <div class="row">
+                            <div class="slider-diplomas row">
                                 <div class="col-lg-4">
                                     <div class="certificate-cart">
                                         <img src="../img/certificates.png" alt="сертификат 1">
@@ -308,10 +359,22 @@
                                     </div>
                                     <p class="name-certificate">Грамота 3</p>
                                 </div>
+                                <div class="col-lg-4">
+                                    <div class="certificate-cart">
+                                        <img src="../img/certificates.png" alt="сертификат 3">
+                                    </div>
+                                    <p class="name-certificate">Грамота 4</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="certificate-cart">
+                                        <img src="../img/certificates.png" alt="сертификат 3">
+                                    </div>
+                                    <p class="name-certificate">Грамота 5</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade active show" id="awards" role="tabpanel" aria-labelledby="awards">
-                            <div class="row">
+                        <div class="tab-pane fade" id="awards" role="tabpanel" aria-labelledby="awards">
+                            <div class="slider-awards row">
                                 <div class="col-lg-4">
                                     <div class="certificate-cart">
                                         <img src="../img/certificates.png" alt="сертификат 1">
@@ -329,6 +392,12 @@
                                         <img src="../img/certificates.png" alt="сертификат 3">
                                     </div>
                                     <p class="name-certificate">Награда 3</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="certificate-cart">
+                                        <img src="../img/certificates.png" alt="сертификат 3">
+                                    </div>
+                                    <p class="name-certificate">Награда 4</p>
                                 </div>
                             </div>   
                         </div>
@@ -420,13 +489,52 @@
     <script src="../js/script.js"></script>  
     
     <script>
-        $('.slider-personal').slick({
+
+        $('#diplomas a').on('click', function (e) {
+            $(".slider-diplomas").slick('reinit');
+        })
+
+        $('.slider-team').slick({
             dots: false,
             arrows: false,
             autoplay: true,
             autoplaySpeed: 3000,
             infinite: true,
-            speed: 600,
+            speed: 400,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                        }
+                },
+
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+
+        $('.slider-all-items, .slider-certificates, .slider-diplomas, .slider-awards').slick({
+            dots: false,
+            arrows: false,
+            infinite: true,
+            speed: 400,
             slidesToShow: 3,
             slidesToScroll: 1,
             responsive: [
@@ -444,25 +552,17 @@
                         slidesToShow: 1,
                         slidesToScroll: 1
                     }
-                },
-
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
                 }
             ]
         });
-
+               
         $('.slider-partners').slick({
             dots: false,
             arrows: false,
             autoplay: true,
             autoplaySpeed: 3000,
             infinite: true,
-            speed: 600,
+            speed: 300,
             slidesToShow: 4,
             slidesToScroll: 1,
             responsive: [
@@ -493,12 +593,22 @@
         });
 
         $('#ar-team-lf').click(function(){
-            $('.slider-personal').slick('slickPrev');
+            $('.slider-team').slick('slickPrev');
         })
 
         $('#ar-team-rg').click(function(){
-            $('.slider-personal').slick('slickNext');
+            $('.slider-team').slick('slickNext');
         })
+
+        $('#ar-cert-lf').click(function(){
+            $('.slider-all-items, .slider-certificates, .slider-diplomas, .slider-awards').slick('slickPrev');
+        })
+
+        $('#ar-cert-rg').click(function(){
+            $('.slider-all-items, .slider-certificates, .slider-diplomas, .slider-awards').slick('slickNext');
+        })
+
+
 
         $('#ar-logo-lf').click(function(){
             $('.slider-partners').slick('slickPrev');
@@ -507,6 +617,12 @@
         $('#ar-logo-rg').click(function(){
             $('.slider-partners').slick('slickNext');
         })
+
+        
+
+        
+
+
 
 
     </script>

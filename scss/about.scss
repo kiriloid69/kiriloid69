@@ -7,7 +7,6 @@
 .arrows {
     display: flex;
     float: right;
-    margin-right: 15px;
 }
 
 .arrow-slider {
@@ -75,10 +74,17 @@
 }  
 
 .certificates {
-background: #f89e2a; /* Old browsers */
-background: -moz-linear-gradient(top,  #f89e2a 0%, #f89e2a 58%, #ffffff 58%, #ffffff 58%, #ffffff 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #f89e2a 0%,#f89e2a 58%,#ffffff 58%,#ffffff 58%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #f89e2a 0%,#f89e2a 58%,#ffffff 58%,#ffffff 58%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+// background-color: #f89e2a; /* Old browsers */
+// background-image: -moz-linear-gradient(top,  #f89e2a 0%, #f89e2a 58%, #ffffff 58%, #ffffff 58%, #ffffff 100%); /* FF3.6-15 */
+// background: -webkit-linear-gradient(top,  #f89e2a 0%,#f89e2a 58%,#ffffff 58%,#ffffff 58%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+// background: linear-gradient(to bottom,  #f89e2a 0%,#f89e2a 58%,#ffffff 58%,#ffffff 58%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+background-color: transparent;
+background-image: url(../img/bg-sert.png);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: top;
+
 }
 
 .nav-pills .nav-link.active {

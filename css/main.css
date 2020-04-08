@@ -412,6 +412,26 @@ header {
   font-size: 14px;
 }
 
+.arrows-tabs {
+  position: absolute;
+  right: 15px;
+}
+.arrows-tabs .arrow-slider:hover {
+  background-color: #182333;
+}
+
+.tab-content > .tab-pane, .pill-content > .pill-pane {
+  display: block;
+  /* undo display:none          */
+  height: 0;
+  /* height:0 is also invisible */
+}
+
+.tab-content > .active, .pill-content > .active {
+  height: auto;
+  /* let the content decide it  */
+}
+
 .work-stages .cart-height {
   height: 200px;
 }
@@ -564,13 +584,6 @@ header {
   .form-action input {
     margin-bottom: 20px;
   }
-
-  .rectangle-card {
-    height: 165px !important;
-  }
-  .rectangle-card img {
-    height: 115%;
-  }
 }
 @media screen and (max-width: 991px) {
   .menu-burger-block {
@@ -642,7 +655,7 @@ header {
     height: 200px !important;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .statistics {
     background-image: none;
   }
@@ -670,6 +683,14 @@ header {
 
   .mb100 {
     margin-bottom: 50px !important;
+  }
+
+  .rectangle-card img {
+    height: 170px;
+  }
+
+  .rectangle-card {
+    height: 135px !important;
   }
 }
 @media screen and (max-width: 575px) {
@@ -702,11 +723,6 @@ header {
 
   .orange-button {
     margin: 25px 0 50px;
-  }
-
-  .arrows {
-    margin-right: 15px;
-    margin-top: 25px !important;
   }
 
   .carousel-inner {

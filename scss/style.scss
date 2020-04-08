@@ -427,6 +427,25 @@ header {
     }
 }
 
+.arrows-tabs {
+    position: absolute;
+    right: 15px;
+
+    .arrow-slider {
+        &:hover {
+            background-color: $primary-color;
+        }
+    }
+}
+
+.tab-content > .tab-pane, .pill-content > .pill-pane {
+    display: block;    /* undo display:none          */
+    height: 0;         /* height:0 is also invisible */
+}
+.tab-content > .active, .pill-content > .active {
+    height: auto;      /* let the content decide it  */
+} 
+
 .work-stages {
 
     .cart-height {
@@ -610,17 +629,6 @@ header {
             margin-bottom: 20px;
         }
     }
-
-
-    .rectangle-card {
-
-        height: 165px!important;
-
-        img {
-            height: 115%;
-        }
-    }
-
 }
 
 @media screen and (max-width: 991px) {
@@ -700,7 +708,7 @@ header {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
 
 .statistics {
@@ -733,9 +741,13 @@ header {
     margin-bottom: 50px !important;
 }
 
+.rectangle-card img {
+    height: 170px;
+}
 
-
-
+.rectangle-card {
+    height: 135px !important;
+}
 
 }
 
@@ -774,11 +786,6 @@ header {
 
     .orange-button {
         margin: 25px 0 50px;
-    }
-
-    .arrows {
-        margin-right: 15px;
-        margin-top: 25px !important;
     }
 
     .carousel-inner {
