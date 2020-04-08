@@ -1,0 +1,143 @@
+@import 'const';
+
+.title-section-block .title-section {
+    display: inline-block;
+}
+
+.arrows {
+    display: flex;
+    float: right;
+    margin-right: 15px;
+}
+
+.arrow-slider {
+    border: $border;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    margin-left: 20px;
+    background-color: $white;
+    cursor: pointer;
+
+    i {
+        color: $gray;
+        line-height: 1.45;
+    }
+
+    &:hover {
+        background-color: $orange;
+        border: 1px solid $orange;
+        transition: .2s;
+
+        i {
+            color: $white;
+        }
+    }
+
+    
+}
+
+.card-people {
+    margin-bottom: 70px;
+}
+
+.rectangle-card {
+    border: 4px solid $light-gray;
+    height: 245px;
+    margin-top: 75px;
+    position: relative;
+    
+
+    img {
+        display: block;
+        margin: auto;
+        position: absolute;
+        left: 0; bottom: 0; right: 0;
+    } 
+
+    p {
+        text-align: center;
+    }
+}
+
+
+.name-employee {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px 0 10px;
+    text-align: center;
+}
+
+.position-employee {
+    font-size: 18px;
+    color: $gray;
+    text-align: center;
+}  
+
+.certificates {
+background: #f89e2a; /* Old browsers */
+background: -moz-linear-gradient(top,  #f89e2a 0%, #f89e2a 58%, #ffffff 58%, #ffffff 58%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f89e2a 0%,#f89e2a 58%,#ffffff 58%,#ffffff 58%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f89e2a 0%,#f89e2a 58%,#ffffff 58%,#ffffff 58%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.nav-pills .nav-link.active {
+    background-color: $primary-color;
+    border-radius: 0;
+    border: 1px solid $primary-color;
+}
+
+.nav-item {
+    width: 120px;
+    text-align: center;
+    margin-right: 20px;
+
+    a {
+        border: $border;
+        color: $white;
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
+
+.certificate-cart {
+    background-color: $white;
+    border: $border;
+    padding: 15px;
+
+    img {
+        width: 100%;
+    }
+}
+ 
+.name-certificate {
+    font-size: 18px;
+    margin-top: 15px;
+    color: $primary-color;
+    text-align: center;
+}
+
+.logo-card {
+    img {
+        width: 100%;
+    }
+}
+
+.nav-pills .nav-link {
+    padding: 13px 0;
+    border-radius: 0;
+}
+
+.partners {
+    background-color: $primary-color;
+
+    .title-section {
+        color: $white;
+    }
+
+    // .arrov-slider {
+    //     background-color: $white;
+    // }
+
+}
+
