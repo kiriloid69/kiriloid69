@@ -6,11 +6,15 @@
 }
 
 .our-work-cart {
-    margin-top: 10px;
+    margin-top: 20px;
 
     img {
         width: 100%;
     }
+}
+
+.title-pages {
+    margin-bottom: 50px;
 }
 
 .nav-item {
@@ -41,4 +45,10 @@ a {
     &:hover {
         color: $primary-color;
     }
+}
+
+.par-work {
+    font-size: 16px;
+    margin-bottom: 40px;
+    font-weight: 400;
 }

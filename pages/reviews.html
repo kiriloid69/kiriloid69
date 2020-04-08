@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MediaBazar – Контакты</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../css/main.css">
@@ -54,7 +56,22 @@
                     <ul class="navigation">
                         <li class="navigation-item"><a href="../index.html">Главная</a></li>
                         <li class="navigation-item"><a href="about.html">О компании</a></li>
-                        <li class="navigation-item"><a href="our-services.html">Наши услуги</a></li>
+                        <li class="navigation-item">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Наши услуги</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="our-services.html#wid-print">Широкоформатная печать</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="our-services.html">Ламинация</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="our-services.html">Дизайн рекламы</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="our-services.html">Монтаж</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="our-services.html">Дизайн</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="our-services.html">Изготовление картин</a>
+                            </div>
+                        </li>
                         <li class="navigation-item"><a class="orange" href="#">Отзывы</a></li>
                         <li class="navigation-item"><a href="our-work.html">Наши работы</a></li>
                         <li class="navigation-item"><a href="questions.html">Вопросы</a></li>
@@ -110,8 +127,8 @@
                           </li>
                     </ul>
                     <div class="arrows">
-                        <a href="#carouselEmployee" data-slide="prev"><div class="arrov-slider"><i class="far fa-2x fa-angle-left"></i></div></a>
-                        <a href="#carouselEmployee" data-slide="next"><div class="arrov-slider"><i class="far fa-2x fa-angle-right"></i></div></a>
+                        <div id="ar-rev-lf" class="arrov-slider"><i class="far fa-2x fa-angle-left"></i></div>
+                        <div id="ar-rev-rg" class="arrov-slider"><i class="far fa-2x fa-angle-right"></i></div>
                     </div>
                 </div>
             
@@ -129,7 +146,123 @@
                             <iframe width="100%" height="420" src="https://www.youtube.com/embed/DmWWqogr_r8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
                         </div>
                         <div class="tab-pane fade" id="text" role="tabpanel" aria-labelledby="text-tab">
-                            <iframe width="100%" height="420" src="https://www.youtube.com/embed/r_0JjYUe5jo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="slider-reviews row">
+                                <div class="col-lg-12">
+                                    <div class="review-text-block">
+                                        <p class="name-review">Ваш постоянный Ростовский заказчик</p>
+                                        <p class="text-review">
+                                            Делал у вас много заказов, но за рекламу на видеоэкране 
+                                            отдельное спасибо! Я немного в шоке насколько это привлекает людей! Ещё раз спасибо, оценил!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="review-text-block">
+                                        <p class="name-review">Руслан и Елена Синицкие</p>
+                                        <p class="text-review">
+                                            Мы заказывали рекламный баннер для рекламной растяжки на рынке. 
+                                            Качество, надо сказать, отличное. Печать стойкая, несмотря на непогоду яркость осталась такой же, 
+                                            люверсы крепкие. В общем, качеством полностью довольны, а сервис – это вообще отдельный плюс. <br> <br>
+                                            Отправили к вам уже нескольких соседей и все также довольны качеством. <br>
+                                            Будем и дальше вас рекомендовать!
+                                            </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="review-text-block">
+                                        <p class="name-review">Матвеев Даниил</p>
+                                        <p class="text-review">
+                                            Спасибо, что убедили заказать не статическую, а динамическую рекламу. По сравнению 
+                                            со статикой – эффект значительно лучше и я это вижу по выручке. Клиентов в нашем салоне красоты 
+                                            стало в полтора раза больше! <br> <br>
+                                            Вот прям огромное спасибо вам! Не думал я, что это так сильно влияет на увеличение проходимости. <br>
+                                            Желаю вам успехов!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="review-text-block">
+                                        <p class="name-review">Евгений П.</p>
+                                        <p class="text-review">
+                                            Делал здесь сайт, так как видел у знакомого их работу и всё понравилось. Если честно получилось даже 
+                                            немного лучше чем ожидал. Ребята отлично поняли мою идею, изучили нишу, всё настроили, подключили рекламу
+                                            и теперь помогают всё обновлять. <br> <br>
+                                            При невысокой цене получить такую профессиональную команду дорогого стоит!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="review-text-block">
+                                        <p class="name-review">Инна Игоревна Вербицкая</p>
+                                        <p class="text-review">
+                                            Спасибо, что убедили заказать не статическую, а динамическую рекламу. По сравнению 
+                                            со статикой – эффект значительно лучше и я это вижу по выручке. Клиентов в нашем салоне красоты стало в полтора раза больше! <br> <br>
+                                            Вот прям огромное спасибо вам! Не думал я, что это так сильно влияет на увеличение проходимости. <br>
+                                            Желаю вам успехов!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="review-text-block">
+                                        <p class="name-review">Савельев И.И.</p>
+                                        <p class="text-review">
+                                            Работаю с ребятами уже несколько лет, заказываю всякую полиграфию (от визиток до флаеров и рекламных буклетов). 
+                                            Ни разу не подвели ни с качеством, ни со сроками. Пытался заказывать в другой фирме (так как территориально она была удобней), 
+                                            но вернулся в MEDIA BAZAR, так как здесь существенные преимущества по уровню исполнения. 
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="review-text-block">
+                                        <p class="name-review">Яна Рыбальская</p>
+                                        <p class="text-review">
+                                            Пишу отзыв спустя два года после монтажа. Но лучше поздно, чем никогда. А причиной стала нагрянувшая проверка 
+                                            в наши торговые ряды. Что хочу сказать. Мы, в отличие от некоторых владельцев магазинов, её с лёгкостью прошли!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="review-text-block">
+                                        <p class="name-review">Группа друзей из Азова</p>
+                                        <p class="text-review">
+                                            Спасибо, что выручили с подарком! Мы второпях делали тематическую вечеринку и важным пунктом было, чтобы 
+                                            все участники были в футболках с определёнными надписями. Сроки поджимали, но ребята из МЕДИА БАЗАР всё 
+                                            успели. Футболки – класс, теперь всей компанией просто в них ходим, они реально качественные, нанесение 
+                                            яркой и хорошо держится!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="review-text-block">
+                                        <p class="name-review">Иван К.</p>
+                                        <p class="text-review">
+                                            Являясь владельцем нескольких магазинов по всему Азовскому району, могу сказать, что уровень качества тут 
+                                            на высоте, а мне уж поверьте есть с чем сравнивать! Жаль, что только сейчас нашёл вас, и кстати по рекомендации. 
+                                            Мне всегда самое важное – это сроки, но конечно же и качество с ценой тоже важны. Ваша студия отлично отрабатывает 
+                                            по всем параметрам. При этом ещё и очень приятно было общаться со всеми.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="review-text-block">
+                                        <p class="name-review">Ульяна Романова</p>
+                                        <p class="text-review">
+                                            Пишу по поручению руководителя компании с благодарностью за качество проведённой промо-акции. Нам была полностью
+                                            разработана и реализована рекламная компания. По результатам её окончания и подведению итогов руководство осталось
+                                            очень довольным увеличением интереса к нашей продукции.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="review-text-block">
+                                        <p class="name-review">Вячеслав Игоревич</p>
+                                        <p class="text-review">
+                                            Очень благодарен ребятам за изготовление светового короба. Нужно было сделать максимально быстро, но без потери качества. 
+                                            Я доверился и не пожалел. Пишу через год эксплуатации, вывеска пережила лето и зиму, при этом выглядит также прилично.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>   
                 </div>
@@ -150,7 +283,7 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-sm-12"><input type="text" placeholder="Введите Ваше имя"></div>
                         <div class="col-lg-4 col-md-6 col-sm-12"><input type="text"  placeholder="Введите Ваш телефон"></div>
-                        <div class="col-lg-4"><button type="submit" >Отправить заявку</button></div>
+                        <div class="col-lg-4"><button onclick="" class="orange-button fl">Отправить заявку <img src="../img/arrow-right.png" alt=">"></button></div>
                     </div>
                 </form>
                 <div class="col-lg-12">
@@ -162,7 +295,29 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../slick/slick.min.js"></script>
     <script src="../js/script.js"></script>
+    <script>
+
+        $('#ar-rev-lf').click(function(){
+            $('.slider-reviews').slick('slickPrev');
+        })
+
+        $('#ar-rev-rg').click(function(){
+            $('.slider-reviews').slick('slickNext');
+        })
+
+        $('.slider-reviews').slick({
+            dots: false,
+            arrows: false,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            infinite: true,
+            speed: 400,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        });
+    </script>
 </body>
 </html>

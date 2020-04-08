@@ -7,7 +7,6 @@
 .arrows {
     display: flex;
     float: right;
-    margin-right: 15px;
     margin-top: -66px;
 }
 
@@ -70,4 +69,23 @@ a {
     &:hover {
         color: $primary-color;
     }
+}
+
+.review-text-block {
+
+    height: 280px;
+    padding: 30px;
+    border: $border;
+
+    .name-review {
+        font-size: 24px;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    .text-review {
+        font-size: 18px;
+        font-style: italic;
+    }
+
 }

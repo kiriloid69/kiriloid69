@@ -4,7 +4,6 @@
 .arrows {
   display: flex;
   float: right;
-  margin-right: 15px;
   margin-top: -66px; }
 
 .arrov-slider {
@@ -52,5 +51,17 @@ a {
   background-color: transparent; }
   a:hover {
     color: #182333; }
+
+.review-text-block {
+  height: 280px;
+  padding: 30px;
+  border: 1px solid #ebedec; }
+  .review-text-block .name-review {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 700; }
+  .review-text-block .text-review {
+    font-size: 18px;
+    font-style: italic; }
 
 /*# sourceMappingURL=reviews.css.map */
