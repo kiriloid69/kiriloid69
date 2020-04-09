@@ -421,6 +421,9 @@ header {
   background-size: contain;
   color: #f8f9fa;
 }
+.manager .manager-mobile {
+  display: none;
+}
 .manager .title-section-block {
   border: none;
   padding: 0;
@@ -689,6 +692,12 @@ header {
   }
 }
 @media screen and (max-width: 768px) {
+  .manager-mobile {
+    display: block !important;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
   .arrows-tabs {
     display: none !important;
   }

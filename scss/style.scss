@@ -432,6 +432,10 @@ header {
     background-size: contain;
     color: $white;
 
+    .manager-mobile {
+        display: none;
+    }
+
     .title-section-block {
         border: none;
         padding: 0;
@@ -743,79 +747,85 @@ header {
 
 @media screen and (max-width: 768px) {
 
-.arrows-tabs {
-    display: none !important;
-}
-
-.statistics {
-    background-image: none;
-}
-
-.title-section-block .title-section {
-    font-size: 36px;
-
-}
-
-.title-section-block .sub-title-section {
-    font-size: 14px;
-}
-
-.manager {
-    background-image: none;
-}
-
-.title-pages {
-    font-size: 24px !important;
-    margin: 50px 0 30px !important;
-}
-
-.card-header h5 {
-    font-size: 14px !important;
-}
-
-.mb100 {
-    margin-bottom: 50px !important;
-}
-
-.rectangle-card img {
-    height: 170px;
-}
-
-.rectangle-card {
-    height: 135px !important;
-}
-
-.nav-item {
-    display: flex;
-    flex: 1;
-    width: 0;
-    
-    .nav-link {
-        font-size: 12px;
+    .manager-mobile {
+        display: block !important;
+        width: 100%;
+        margin-bottom: 40px;
     }
 
-}
-
-.nav-cert {
-    display: block;
-
-    a {
-        padding: 0;
+    .arrows-tabs {
+        display: none !important;
     }
-}
 
-.arrows {
-    top: 20px !important;
-}
-
-.arrow-slider {
-    height: 40px !important;
-    width: 40px !important;
-
-    i {
-            line-height: 1.05 !important;
+    .statistics {
+        background-image: none;
     }
-}
+
+    .title-section-block .title-section {
+        font-size: 36px;
+
+    }
+
+    .title-section-block .sub-title-section {
+        font-size: 14px;
+    }
+
+    .manager {
+        background-image: none;
+    }
+
+    .title-pages {
+        font-size: 24px !important;
+        margin: 50px 0 30px !important;
+    }
+
+    .card-header h5 {
+        font-size: 14px !important;
+    }
+
+    .mb100 {
+        margin-bottom: 50px !important;
+    }
+
+    .rectangle-card img {
+        height: 170px;
+    }
+
+    .rectangle-card {
+        height: 135px !important;
+    }
+
+    .nav-item {
+        display: flex;
+        flex: 1;
+        width: 0;
+        
+        .nav-link {
+            font-size: 12px;
+        }
+
+    }
+
+    .nav-cert {
+        display: block;
+
+        a {
+            padding: 0;
+        }
+    }
+
+    .arrows {
+        top: 20px !important;
+    }
+
+    .arrow-slider {
+        height: 40px !important;
+        width: 40px !important;
+
+        i {
+                line-height: 1.05 !important;
+        }
+    }
 
 }
 
