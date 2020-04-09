@@ -6,7 +6,9 @@
 
 .arrows {
     display: flex;
-    float: right;
+    position: absolute;
+    top: 30px;
+    right: 0;
 }
 
 .arrow-slider {
@@ -33,7 +35,30 @@
         }
     }
 
-    
+}
+
+.title-section-block {
+    position: relative;
+}
+
+.arrows-title {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+
+.arrows-tabs {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 15px;
+
+    .arrow-slider {
+        &:hover {
+            background-color: $primary-color;
+        }
+    }
 }
 
 .card-people {

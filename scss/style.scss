@@ -45,6 +45,10 @@ $burger-gutter: 5px;
     display: block;
 }
 
+.nav-pills {
+    position: relative;
+}
+
 body {
   &.open {
     overflow: hidden !important;
@@ -190,6 +194,10 @@ body {
   }
 }
 
+.slick-slide {
+    outline: none;
+}
+
 h1, h2, h3, h4 {
     font-weight: 900;
 }
@@ -202,10 +210,6 @@ a {
 
 .mbn {
     margin-bottom: 0!important;
-}
-
-html {
-   
 }
 
 
@@ -444,17 +448,6 @@ header {
         p {
             margin-left: 15px;
             font-size: 14px;
-        }
-    }
-}
-
-.arrows-tabs {
-    position: absolute;
-    right: 15px;
-
-    .arrow-slider {
-        &:hover {
-            background-color: $primary-color;
         }
     }
 }
@@ -736,10 +729,23 @@ header {
         height: 200px!important;
     }
 
+    .certificates {
+        background-color: $orange !important;
+
+        .name-certificate {
+            color: $white;
+        }
+    }
+
+    
+
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
+.arrows-tabs {
+    display: none !important;
+}
 
 .statistics {
     background-image: none;
@@ -779,6 +785,38 @@ header {
     height: 135px !important;
 }
 
+.nav-item {
+    display: flex;
+    flex: 1;
+    width: 0;
+    
+    .nav-link {
+        font-size: 12px;
+    }
+
+}
+
+.nav-cert {
+    display: block;
+
+    a {
+        padding: 0;
+    }
+}
+
+.arrows {
+    top: 20px !important;
+}
+
+.arrow-slider {
+    height: 40px !important;
+    width: 40px !important;
+
+    i {
+            line-height: 1.05 !important;
+    }
+}
+
 }
 
 @media screen and (max-width: 575px) {
@@ -809,13 +847,9 @@ header {
 
     .phone{
 
-     .order-call {
-        margin-left: 0;
-     }
-    }
-
-    .orange-button {
-        margin: 25px 0 50px;
+        .order-call {
+            margin-left: 0;
+        }
     }
 
     .carousel-inner {
@@ -850,6 +884,38 @@ header {
         height: 40px;
     }
 
+    .review-text-block {
+    
+        .name-review {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    
+        .text-review {
+            font-size: 14px;
+        }
+    
+    }
+
+    .nav-item {
+
+        .nav-link {
+            font-size: 10px !important;
+        }
+    }
+
+    .title-section-block .title-section {
+        font-size: 30px;
+    }
+
+    .title-section-block .sub-title-section {
+        font-size: 12px;
+    }
+
+    .arrows {
+        top: 15px !important;
+    }
+
 
 }
 
@@ -862,9 +928,10 @@ header {
         font-size: 14px;
         width: 100%;
     }
+    
 
     .title-section-block .title-section {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .title-section-block .sub-title-section {
@@ -932,12 +999,15 @@ header {
             }
         }
     }
-}
-
-@media screen and (max-width: 375px) {
 
     .phone .phone-number {
         font-size: 10px;
 }
 
+    .nav-item {
+
+        .nav-link {
+            font-size: 10px !important;
+        }
+    }
 }

@@ -85,6 +85,10 @@
   display: block;
 }
 
+.nav-pills {
+  position: relative;
+}
+
 body.open {
   overflow: hidden !important;
   z-index: 0;
@@ -204,6 +208,10 @@ body:before {
 .burger__button.open + .burger__menu li {
   transform: translateX(0);
   visibility: visible;
+}
+
+.slick-slide {
+  outline: none;
 }
 
 h1, h2, h3, h4 {
@@ -427,14 +435,6 @@ header {
 .manager .border-left p {
   margin-left: 15px;
   font-size: 14px;
-}
-
-.arrows-tabs {
-  position: absolute;
-  right: 15px;
-}
-.arrows-tabs .arrow-slider:hover {
-  background-color: #182333;
 }
 
 .tab-content > .tab-pane, .pill-content > .pill-pane {
@@ -680,8 +680,19 @@ header {
   .rectangle-card {
     height: 200px !important;
   }
+
+  .certificates {
+    background-color: #fda12b !important;
+  }
+  .certificates .name-certificate {
+    color: #f8f9fa;
+  }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+  .arrows-tabs {
+    display: none !important;
+  }
+
   .statistics {
     background-image: none;
   }
@@ -718,6 +729,34 @@ header {
   .rectangle-card {
     height: 135px !important;
   }
+
+  .nav-item {
+    display: flex;
+    flex: 1;
+    width: 0;
+  }
+  .nav-item .nav-link {
+    font-size: 12px;
+  }
+
+  .nav-cert {
+    display: block;
+  }
+  .nav-cert a {
+    padding: 0;
+  }
+
+  .arrows {
+    top: 20px !important;
+  }
+
+  .arrow-slider {
+    height: 40px !important;
+    width: 40px !important;
+  }
+  .arrow-slider i {
+    line-height: 1.05 !important;
+  }
 }
 @media screen and (max-width: 575px) {
   .main-page {
@@ -747,10 +786,6 @@ header {
     margin-left: 0;
   }
 
-  .orange-button {
-    margin: 25px 0 50px;
-  }
-
   .carousel-inner {
     margin-top: 30px !important;
   }
@@ -775,6 +810,30 @@ header {
   .border-button {
     height: 40px;
   }
+
+  .review-text-block .name-review {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .review-text-block .text-review {
+    font-size: 14px;
+  }
+
+  .nav-item .nav-link {
+    font-size: 10px !important;
+  }
+
+  .title-section-block .title-section {
+    font-size: 30px;
+  }
+
+  .title-section-block .sub-title-section {
+    font-size: 12px;
+  }
+
+  .arrows {
+    top: 15px !important;
+  }
 }
 @media screen and (max-width: 400px) {
   .border-button {
@@ -784,7 +843,7 @@ header {
   }
 
   .title-section-block .title-section {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   .title-section-block .sub-title-section {
@@ -844,10 +903,13 @@ header {
   .phone .phone-number img {
     display: none;
   }
-}
-@media screen and (max-width: 375px) {
+
   .phone .phone-number {
     font-size: 10px;
+  }
+
+  .nav-item .nav-link {
+    font-size: 10px !important;
   }
 }
 

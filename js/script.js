@@ -10,7 +10,7 @@ burger.addEventListener("click", (e) => {
 });
 
 function slowScroll (id) {
-  var offset = 50;
+  var offset = 110;
   $('html,body').animate({
       scrollTop : $(id).offset ().top - offset
   }, 500);

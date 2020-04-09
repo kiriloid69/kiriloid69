@@ -3,7 +3,9 @@
 
 .arrows {
   display: flex;
-  float: right; }
+  position: absolute;
+  top: 30px;
+  right: 0; }
 
 .arrow-slider {
   border: 1px solid #ebedec;
@@ -22,6 +24,23 @@
     transition: .2s; }
     .arrow-slider:hover i {
       color: #f8f9fa; }
+
+.title-section-block {
+  position: relative; }
+
+.arrows-title {
+  display: flex;
+  position: absolute;
+  top: 30px;
+  right: 0; }
+
+.arrows-tabs {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 15px; }
+  .arrows-tabs .arrow-slider:hover {
+    background-color: #182333; }
 
 .card-people {
   margin-bottom: 70px; }
