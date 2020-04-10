@@ -216,7 +216,7 @@ a {
 body {
     font-family: $lato;
     color: $primary-color;
-    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -301,20 +301,20 @@ header {
     background-color: $primary-color;
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right 100px;
     background-size: contain;
     color: $white;
     padding-top: 100px;
 
     .orange-button {
-        margin: 30px 0 90px;
+        margin: 30px 0 100px;
         width: 100%;
     }
 }
 
 .main-title {
     font-size: 72px;
-    margin: 90px 0 30px;
+    margin: 130px 0 30px;
 
     .location {
         font-size: 48px;
@@ -542,6 +542,7 @@ header {
         font-size: $main-size;
         font-weight: 700;
         width: 100%;
+        text-align: left;
     }
 
     form {
@@ -798,12 +799,18 @@ header {
     .nav-item {
         display: flex;
         flex: 1;
-        width: 0;
+        width: 100%;
         
-        .nav-link {
-            font-size: 12px;
-        }
+        // .nav-link {
+        //     font-size: 12px;
+        // }
 
+    }
+
+    .nav-item {
+        display: flex;
+        flex: 1;
+        width: 100%;
     }
 
     .nav-cert {

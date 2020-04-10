@@ -229,7 +229,7 @@ a:hover {
 body {
   font-family: "Lato", sans-serif;
   color: #182333;
-  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -302,19 +302,19 @@ header {
   background-color: #182333;
   background-image: url(../img/bg.jpg);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right 100px;
   background-size: contain;
   color: #f8f9fa;
   padding-top: 100px;
 }
 .main-page .orange-button {
-  margin: 30px 0 90px;
+  margin: 30px 0 100px;
   width: 100%;
 }
 
 .main-title {
   font-size: 72px;
-  margin: 90px 0 30px;
+  margin: 130px 0 30px;
 }
 .main-title .location {
   font-size: 48px;
@@ -520,6 +520,7 @@ header {
   font-size: 14px;
   font-weight: 700;
   width: 100%;
+  text-align: left;
 }
 .submit-request form {
   padding-bottom: 30px;
@@ -742,10 +743,13 @@ header {
   .nav-item {
     display: flex;
     flex: 1;
-    width: 0;
+    width: 100%;
   }
-  .nav-item .nav-link {
-    font-size: 12px;
+
+  .nav-item {
+    display: flex;
+    flex: 1;
+    width: 100%;
   }
 
   .nav-cert {

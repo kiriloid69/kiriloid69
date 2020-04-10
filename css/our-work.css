@@ -40,4 +40,8 @@ a {
   margin-bottom: 40px;
   font-weight: 400; }
 
+@media screen and (max-width: 768px) {
+  .nav-item {
+    width: 0; } }
+
 /*# sourceMappingURL=our-work.css.map */
