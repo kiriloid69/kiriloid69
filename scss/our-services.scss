@@ -1,8 +1,8 @@
 @import 'const';
 
-.title-pages {
-    margin-bottom: 0;
-}
+// .title-pages {
+//     margin-bottom: 0;
+// }
 
 .name-service {
     font-size: 18px;
@@ -59,7 +59,7 @@ td:nth-child(5n-4) {
 
 .nav-tabs {
     border-bottom: none;
-    margin: 50px 0;
+    margin-bottom: 50px ;
     width: 100%;
 }
 
@@ -93,9 +93,23 @@ td:nth-child(5n-4) {
     }
 }
 
+// .calculator {
+//     .row {
+//         margin-top: 15px;
+//     }
+// }
+
+.calc-tablet-size {  
+    margin-top: 15px;
+}
+
+.firs-row-calc {
+    margin-top: 0;
+}
+
 label {
 
-    &[for="text"], &[for="letterHeight"], &[for="width-box"], &[for="height-box"], &[for="width-consoles"], &[for="height-consoles"], &[for="width-table"], &[for="height-table"] {
+    &:nth-child(1), &:nth-child(2) {   
         margin-top: 0;
     }
 
@@ -103,10 +117,7 @@ label {
     font-weight: 700;
     display: block;
     margin-bottom: 5px;
-    margin-top: 20px;
     color: $primary-color;
-
-    
 }
 
 input, select, textarea {
@@ -179,14 +190,13 @@ textarea {
     text-align: left;
 }
 
-.price-table {
-    margin: 70px 0;
-}
-
 
 
 @media screen and (max-width: 768px) {
 
+    .calc-tablet-size {  
+        margin-top: 15px;
+    }
 
     td, tr {
         padding: 15px 0;
@@ -220,7 +230,7 @@ textarea {
     }
 
     .calc-tablet-size {
-        margin-top: 20px
+        margin-top: 20px;
     }
 
 }

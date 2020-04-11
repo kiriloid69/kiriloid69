@@ -35,3 +35,7 @@ function accordeonEngine (id, idSec) {
       slowScroll(id), 500)
   }
 };
+
+$('.dropdown-toggle').click 
+  $('dropdown-menu').toggle('show');
+
