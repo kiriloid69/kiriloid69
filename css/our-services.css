@@ -64,6 +64,9 @@ td:nth-child(5n-4) {
 .visual img {
   width: 100%; }
 
+.price-table {
+  margin-bottom: 50px; }
+
 .calc-tablet-size {
   margin-top: 15px; }
 
