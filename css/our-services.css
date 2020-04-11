@@ -83,7 +83,8 @@ input, select, textarea {
   padding: 10px 20px;
   border: 1px solid #ebedec;
   color: #182333;
-  width: 100%; }
+  width: 100%;
+  background-color: #fff; }
   input::placeholder, select::placeholder, textarea::placeholder {
     color: #ebedec; }
 
@@ -130,8 +131,11 @@ textarea {
   font-size: 30px; }
 
 .orange-button {
+  padding: 15px 20px;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
   width: 100%;
-  margin: 0;
   text-align: left; }
 
 @media screen and (max-width: 768px) {

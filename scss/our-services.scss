@@ -125,6 +125,7 @@ input, select, textarea {
     border: $border;
     color: $primary-color;
     width: 100%;
+    background-color: #fff;
 
     &::placeholder {
         color: $light-gray;
@@ -185,8 +186,11 @@ textarea {
 }
 
 .orange-button {
+    padding: 15px 20px;
+    border: none;
+    font-size: $main-size;
+    font-weight: 700;
     width: 100%;
-    margin: 0;
     text-align: left;
 }
 

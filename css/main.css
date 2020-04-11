@@ -54,22 +54,25 @@
   content: none;
 }
 
-.dropdown-menu {
-  left: -60px !important;
-  top: 10px !important;
-  border-radius: 0;
-  margin-top: 10px;
+.dropdown-item:active {
+  color: #fda12b;
+  text-decoration: none;
   background-color: #f8f9fa;
 }
 
+.dropdown-menu {
+  border-radius: 0;
+  background-color: #f8f9fa;
+  top: 15px !important;
+}
+
 .dropdown-item {
-  padding: 2px 10px !important;
+  padding: 6px 15px !important;
 }
 
 .dropdown-item:hover {
   color: #16181b;
   text-decoration: none;
-  background-color: #fff;
 }
 
 .menu-burger-block {
@@ -85,6 +88,12 @@
   margin-top: 30px;
 }
 
+.dropdown-menu {
+  border: none;
+  padding: 0 0 0 5px;
+  border-left: 2px solid #fda12b;
+}
+
 .burger__menu {
   display: none;
 }
@@ -98,7 +107,6 @@
 }
 
 body.open {
-  overflow: hidden !important;
   z-index: 0;
   position: absolute;
   left: 0;
@@ -189,12 +197,14 @@ body:before {
 }
 .burger__menu {
   list-style-type: none;
-  padding: 45px 0 0 20px;
+  padding: 0 0 0 7px;
+  border-left: 2px solid #fda12b;
+  margin-top: 50px;
 }
 .burger__menu li {
   display: block;
   position: relative;
-  margin: 20px 0;
+  margin: 15px 0;
   visibility: hidden;
   transition: all 0.5s ease;
   transform: translateX(-400px);
@@ -206,12 +216,7 @@ body:before {
   font-size: 18px;
   font-weight: 700;
   transition: all 0.4s ease;
-  border-left: 3px solid transparent;
   padding-left: 0;
-}
-.burger__menu a:hover {
-  padding-left: 20px;
-  border-left: 2px solid #182333;
 }
 .burger__button.open + .burger__menu li {
   transform: translateX(0);
@@ -628,9 +633,13 @@ header {
     overflow: scroll;
   }
 
+  .dropdown-item {
+    padding: 6px 3px !important;
+  }
+
   .dropdown-menu {
-    left: 0 !important;
-    top: 0 !important;
+    left: 5px !important;
+    top: -5px !important;
   }
 
   .burger__button.open + .burger__menu li {
@@ -877,7 +886,7 @@ header {
     top: 15px !important;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
   .border-button {
     padding: 0;
     font-size: 14px;
@@ -940,6 +949,14 @@ header {
     font-weight: 700;
     padding: 10px 0;
   }
+
+  .burger__menu li {
+    margin: 10px 0;
+  }
+
+  .burger__menu a {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 375px) {
   .phone .phone-number img {
@@ -952,6 +969,10 @@ header {
 
   .nav-item .nav-link {
     font-size: 10px !important;
+  }
+
+  .burger__menu a {
+    font-size: 14px;
   }
 }
 
