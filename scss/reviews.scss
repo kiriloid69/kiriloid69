@@ -89,3 +89,20 @@ a {
     }
 
 }
+
+@media screen and (max-width: 768px) {
+    .arrows {
+        display: none;
+    }
+
+    .nav-item {
+        margin-right: 0;
+    }
+
+    .nav-link {
+        width: 100%;
+        margin-right: 15px;
+    }
+
+
+}

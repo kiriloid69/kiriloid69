@@ -64,4 +64,15 @@ a {
     font-size: 18px;
     font-style: italic; }
 
+@media screen and (max-width: 768px) {
+  .arrows {
+    display: none; }
+
+  .nav-item {
+    margin-right: 0; }
+
+  .nav-link {
+    width: 100%;
+    margin-right: 15px; } }
+
 /*# sourceMappingURL=reviews.css.map */

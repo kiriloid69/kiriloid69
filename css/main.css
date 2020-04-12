@@ -107,6 +107,7 @@
 }
 
 body.open {
+  overflow: hidden !important;
   z-index: 0;
   position: absolute;
   left: 0;
@@ -784,12 +785,6 @@ header {
     font-size: 12px !important;
   }
 
-  .nav-item {
-    display: flex;
-    flex: 1;
-    width: 100%;
-  }
-
   .nav-cert {
     display: block;
   }
@@ -973,6 +968,33 @@ header {
 
   .burger__menu a {
     font-size: 14px;
+  }
+
+  .nav-item {
+    margin-right: 5px !important;
+  }
+}
+@media screen and (max-width: 340px) {
+  .arrow-slider {
+    height: 35px !important;
+    width: 35px !important;
+    margin-left: 12px !important;
+  }
+
+  .arrows {
+    top: 5px !important;
+  }
+
+  .title-section-block .title-section {
+    font-size: 22px !important;
+  }
+
+  .nav-item .nav-link {
+    font-size: 9px !important;
+  }
+
+  .border-button {
+    font-size: 12px !important;
   }
 }
 
