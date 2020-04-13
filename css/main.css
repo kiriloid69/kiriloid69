@@ -92,14 +92,23 @@
   border: none;
   padding: 0 0 0 5px;
   border-left: 2px solid #fda12b;
+  transition: .6s;
+}
+
+.dropdown-menu .show {
+  transition: .8s;
 }
 
 .burger__menu {
   display: none;
+  transition: ease 0.5s;
+  opacity: 0;
 }
 
 .d-block {
   display: block;
+  transition: ease 1s;
+  opacity: 1 !important;
 }
 
 .nav-pills {
@@ -116,7 +125,7 @@ body.open {
 body.open:before {
   visibility: visible;
   opacity: 1;
-  z-index: 1;
+  z-index: 10;
 }
 body:before {
   content: "";
@@ -128,8 +137,6 @@ body:before {
   left: 0;
   bottom: 0;
   visibility: hidden;
-  opacity: 0;
-  transition: all 0.4s ease;
 }
 
 .burger {
@@ -145,7 +152,6 @@ body:before {
   height: 33px;
   border-radius: 50%;
   text-align: center;
-  transition: all 0.5s ease;
   border: 2px solid #f8f9fa;
   box-shadow: 0px 0px 8px -2px #333;
 }
@@ -163,7 +169,7 @@ body:before {
   top: 50%;
   left: 0;
   right: 0;
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
   transform: translateY(-1px);
 }
 .burger__button__icon:before, .burger__button__icon:after {
@@ -175,7 +181,6 @@ body:before {
   height: 2px;
   left: 0;
   right: 0;
-  transition: all 0.5s ease;
 }
 .burger__button__icon:before {
   bottom: 5px;
@@ -198,9 +203,10 @@ body:before {
 }
 .burger__menu {
   list-style-type: none;
-  padding: 0 0 0 7px;
+  padding: 0 0 0 15px;
   border-left: 2px solid #fda12b;
   margin-top: 50px;
+  transition: all 0.5s ease;
 }
 .burger__menu li {
   display: block;
@@ -509,9 +515,19 @@ header {
   border-radius: 60px;
   margin: 10px 0 0 10px;
   color: #979ba0;
-  font-size: 18px;
-  line-height: 6.6em;
-  text-align: center;
+  padding: 25px;
+}
+.work-stages .icon img {
+  height: 70px;
+}
+.work-stages .icon svg {
+  fill: #182333;
+  height: 70px;
+  width: 70px;
+}
+
+.arrow-tablet {
+  display: none !important;
 }
 
 .submit-request {
@@ -785,6 +801,10 @@ header {
     font-size: 12px !important;
   }
 
+  .breadcrumb li + li:before {
+    font-size: 12px !important;
+  }
+
   .nav-cert {
     display: block;
   }
@@ -995,6 +1015,10 @@ header {
 
   .border-button {
     font-size: 12px !important;
+  }
+
+  .burger__menu a {
+    font-size: 12px;
   }
 }
 

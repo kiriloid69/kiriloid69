@@ -52,7 +52,32 @@ function calcLedTape() {
         let height = [1, 2, 3, 4];
         let color = [750, 1000, 1000, 1000, 1000, 1100, 1200, 1600];
 
-        result =  width[numWidth-1] * height[numHeight-1] * color[typeColor-1] * count;
+        result =  width[numWidth-1] * height[numHeight-1] * color[typeColor-1]; //коэф.ширины*коэф.высоты*коэф.цвета
+        result += Math.ceil((width[numWidth-1] * height[numHeight-1]) / 9) * 1200;  //округлить в большую сторону((коэф.шир*коэф.выс)/9)*1200
+        result += width[numWidth-1] * height[numHeight-1] * 64; //коэф.ширины*коэф.высоты*64              
+        result += width[numWidth-1] * 144 + height[numHeight-1] * 144;  //коэф.шир*144+коэф.выс*144
+        result += 600; //Постоянное число
+
+        if ( typeColor == 7)
+            result += 5000;
+        else {
+            switch (numHeight-1) {
+                case 1:
+                    result += 600;
+                    break;
+                case 2: 
+                    result += 800;
+                    break;
+                case 3: 
+                    result += 1200;
+                    break;
+                case 4:
+                    result += 1400;
+                    break;
+            }
+        }   
+
+        result *= count;    
     }
 
     function showResult() {
