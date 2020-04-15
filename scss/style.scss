@@ -253,12 +253,7 @@ header {
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: 900;
-
-    a {
-        color: $primary-color;
-    }
+    width: 135px;
 }
 
 .orange {
@@ -810,6 +805,9 @@ header {
     //     top: -48px !important;
     // }
 
+    .phone {
+        margin-top: 0;
+    }
 
     .manager-mobile {
         display: block !important;
@@ -1050,7 +1048,7 @@ header {
     }
 
     .logo {
-        font-size: 18px;
+        width: 110px;
     }
 
     .phone .phone-number {
