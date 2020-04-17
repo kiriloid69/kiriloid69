@@ -4,12 +4,14 @@
   src: local("Lato Regular"), local("Lato-Regular"), url("../fonts/latoregular.woff2") format("woff2"), url("../fonts/latoregular.woff") format("woff"), url("../fonts/../fonts/latoregular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
+  font-display: fallback;
 }
 @font-face {
   font-family: 'Lato';
   src: local("Lato Medium"), local("Lato-Medium"), url("../fonts/latomedium.woff2") format("woff2"), url("../fonts/latomedium.woff") format("woff"), url("../fonts/latomedium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
+  font-display: fallback;
 }
 @font-face {
   font-family: 'Lato';
@@ -22,12 +24,14 @@
   src: local("Lato Heavy"), local("Lato-Heavy"), url("../fonts/latoheavy.woff2") format("woff2"), url("../fonts/latoheavy.woff") format("woff"), url("../fonts/latoheavy.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
+  font-display: fallback;
 }
 @font-face {
   font-family: 'Lato';
   src: local("Lato Black"), local("Lato-Black"), url("../fonts/latoblack.woff2") format("woff2"), url("../fonts/latoblack.woff") format("woff"), url("../fonts/latoblack.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
+  font-display: fallback;
 }
 @font-face {
   font-family: 'Proxima Nova Rg';
@@ -35,6 +39,7 @@
   src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: fallback;
 }
 @font-face {
   font-family: 'Proxima Nova Rg';
@@ -42,6 +47,7 @@
   src: local("Proxima Nova Bold"), local("ProximaNova-Bold"), url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
+  font-display: fallback;
 }
 @font-face {
   font-family: 'Proxima Nova';
@@ -49,6 +55,7 @@
   src: local("Proxima Nova Extrabold"), local("ProximaNova-Extrabld"), url("../fonts/ProximaNova-Extrabld.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Extrabld.woff") format("woff"), url("../fonts/ProximaNova-Extrabld.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
+  font-display: fallback;
 }
 .dropdown-toggle::after {
   content: none;
@@ -511,15 +518,15 @@ header {
   border-radius: 60px;
   margin: 10px 0 0 10px;
   color: #979ba0;
-  padding: 25px;
+  padding: 30px;
 }
 .work-stages .icon img {
   height: 70px;
 }
 .work-stages .icon svg {
-  fill: #182333;
-  height: 70px;
-  width: 70px;
+  fill: #979ba0;
+  height: 60px;
+  width: 60px;
 }
 
 .arrow-tablet {

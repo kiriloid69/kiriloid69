@@ -75,7 +75,8 @@
                         <li class="navigation-item">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Наши услуги</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="large-format-printing.html">Широкоформатная печать</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item orange" href="large-format-printing.html">Широкоформатная печать</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="lamination.html">Ламинация</a>
                                 <div class="dropdown-divider"></div>
@@ -87,15 +88,8 @@
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="making-paintings.html">Изготовление картин</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="singboard/letter.html">Световые буквы</a>
+                                <a class="dropdown-item" href="light-signboard.html">Наружняя реклама</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="singboard/box.html">Световые короба</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="singboard/consoles.html">Световые консоли</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="singboard/table.html">Таблички</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="singboard/led.html">Бегущие строки</a>
                             </div>
                         </li>
                         <li class="navigation-item"><a href="../reviews.html">Отзывы</a></li>
@@ -424,56 +418,72 @@
                             <div class="row">
                                 <div class="visual col-lg-5 col-md-4"><img src="../../img/5.png" alt="Превью"></div>
                                 <div class="col-lg-6 offset-lg-1 col-md-8">
-                                    <form name="fourthCalculator" id="fourthCalculator">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6 calc-size">
-                                                <label for="width-table">Ширина, мм</label>
-                                                <input id="width-table" name="width" value="1000">
+                                    <form name="ledTape" class="calculator" id="ledTape">
+                                        <div class="row calc-size">
+                                            <div class="col-lg-6 col-md-6 calc-tablet-size firs-row-calc">
+                                                <label for="width-led">Ширина, cм</label>
+                                                <select id="width-led" name="width">
+                                                    <option value="1">101</option>
+                                                    <option value="2">133</option>
+                                                    <option value="3">165</option>
+                                                    <option value="4">197</option>
+                                                    <option value="5">229</option>
+                                                    <option value="6">261</option>
+                                                    <option value="7">293</option>
+                                                </select>
                                             </div>
-                                            <div class="col-lg-6 col-md-6 calc-size">
-                                                <label for="height-table">Высота, мм</label>
-                                                <input id="height-table" name="height" value="1000">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="calc-variable col-lg-12">
-                                                <label for="variableFourth">Вариант</label>
-                                                <select name="variable" id="variableFourth">
-                                                    <option value="1">Стандартная пластиковая табличка</option>
-                                                    <option value="2">Таблички с профилем</option>
-                                                    <option value="3">Табличка из акрилового стекла</option>
-                                                    <option value="4">Табличка с гравировкой</option>
+                                            <div class="col-lg-6 col-md-6 calc-tablet-size firs-row-calc">
+                                                <label for="height-led">Высота, cм</label>
+                                                <select id="height-led" name="width">
+                                                    <option value="1">21</option>
+                                                    <option value="2">37</option>
+                                                    <option value="3">53</option>
+                                                    <option value="4">69</option>
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-lg-6 calc-mail">
-                                                <label for="mailFourth">Email</label>
-                                                <input id="mailFourth" type="email">
-                                            </div>
-                                            <div class="col-lg-6 calc-phone">
-                                                <label for="phoneFourth">Ваш телефон</label>
-                                                <input id="phoneFourth" type="text">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-12 calc-comment">
-                                                <label for="commentFourth">Ваш комментарий</label>
-                                                <textarea name="comment" id="commentFourth" cols="23" rows="1"></textarea>
+                                            <div class="calc-variable col-lg-12 calc-tablet-size">
+                                                <label for="color">Цвет</label>
+                                                <select id="color" name="color">
+                                                    <option value="1">Красный</option>
+                                                    <option value="2">Белый</option>
+                                                    <option value="3">Желтый</option>
+                                                    <option value="4">Синий</option>
+                                                    <option value="5">Трехцветный</option>
+                                                    <option value="6">Семицветный</option>
+                                                    <option value="7">Полноцветный</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="calc-counter col-lg-7">
-                                                <label for="countFourth">Количество</label>
+                                            <div class="col-lg-6 calc-mail calc-tablet-size ">
+                                                <label for="mail">Email</label>
+                                                <input id="mailFive" type="email">
+                                            </div>
+                                            <div class="col-lg-6 calc-phone calc-tablet-size ">
+                                                <label for="phone">Ваш телефон</label>
+                                                <input id="phoneFive" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12 calc-comment calc-tablet-size">
+                                                <label for="comment">Ваш комментарий</label>
+                                                <textarea name="comment" id="commentFive" cols="23" rows="1"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="calc-counter col-lg-7 calc-tablet-size .firs-row-calc">
+                                                <label for="count">Количество</label>
                                                 <div class="counter">
-                                                    <div class="minus" id="minusFourth">-</div>
-                                                    <input class="count-pieces" id="countFourth" style="text-align: center;" min="1" type="number" value="1">
-                                                    <div class="plus" id="plusFourth">+</div>
+                                                    <div class="minus" id="minusFive">-</div>
+                                                    <input class="count-pieces" id="countFive" style="text-align: center;" min="1" type="number" value="1">
+                                                    <div class="plus" id="plusFive">+</div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="price col-lg-12"><span class="gray">Итого:</span> <span class="result" id="resultFourth">0</span> руб.</div>    
+                                            <div class="price col-lg-12"><span class="gray">Итого:</span> <span class="result" id="result">0</span> руб.</div>    
                                             <div class="col-lg-6 mb100"><button class="orange-button">Отправить рассчет <img src="../../img/arrow-right.png" alt=">"></button></div>
                                         </div>
                                     </form>
