@@ -33,11 +33,7 @@
                                         <a class="dropdown-item" href="installation.html">Монтаж</a>
                                         <a class="dropdown-item" href="design.html">Дизайн</a>
                                         <a class="dropdown-item" href="making-paintings.html">Изготовление картин</a>
-                                        <a class="dropdown-item" href="singboard/letter.html">Световые буквы</a>
-                                        <a class="dropdown-item" href="singboard/box.html">Световые короба</a>
-                                        <a class="dropdown-item" href="singboard/consoles.html">Световые консоли</a>
-                                        <a class="dropdown-item" href="singboard/table.html">Таблички</a>
-                                        <a class="dropdown-item" href="singboard/led.html">Бегущие строки</a>
+                                        <a class="dropdown-item" href="singboard/letter.html">Наружняя реклама</a>
                                     </div>
                                 </div>
                             </li>
@@ -153,22 +149,23 @@
                 <div class="col-lg-12">
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="letter" role="tabpanel" aria-labelledby="letter-tab">
+
                             <div class="row">
-                                <div class="visual col-lg-5 col-md-4"><img src="../../img/1.png" alt="Превью"></div>
-                                <div class="col-lg-6 offset-lg-1 col-md-8">
+                                <div class="visual col-lg-5"><img src="../../img/1.png" alt="Превью"></div>
+                                <div class="col-lg-6 offset-lg-1">
                                     <form name="firstCalculator" id="firstCalculator">
                                         <div class="row">
-                                            <div class="col-lg-6 col-md-6 calc-text calc-tablet-size">
+                                            <div class="col-lg-6 calc-text calc-tablet-size firs-row-calc">
                                                 <label for="text">Ваш текст</label>
                                                 <input id="text" name="text" value="Пример текста">
                                             </div>
-                                            <div class="col-lg-6 col-md-6 calc-height calc-tablet-size">
+                                            <div class="col-lg-6 calc-height calc-tablet-size firs-row-calc">
                                                 <label for="letterHeight">Высота буквы, см</label>
                                                 <input class="col-lg-12" id="letterHeight" type="number" min="1" value="15">
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-lg-12">
+                                            <div class="col-lg-12 calc-tablet-size">
                                                 <div class="calc-font">
                                                     <label for="font">Шрифт</label>
                                                     <select name="font" id="font">
@@ -180,7 +177,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="calc-light col-lg-12">
+                                            <div class="calc-light col-lg-12 calc-tablet-size">
                                                 <label for="type">Подсветка</label>
                                                 <select name="type" id="type">
                                                     <option value="1">Светится лицо</option>
@@ -194,11 +191,11 @@
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="row">
-                                                    <div class="calc-mail col-lg-6">
+                                                    <div class="calc-mail col-lg-6 calc-tablet-size">
                                                         <label for="mailFirst" >Email</label>
                                                         <input id="mailFirst" type="email">
                                                     </div>
-                                                    <div class="calc-phone col-lg-6">
+                                                    <div class="calc-phone col-lg-6 calc-tablet-size">
                                                         <label for="phoneFirst">Ваш телефон</label>
                                                         <input id="phoneFirst" type="text">
                                                     </div>
@@ -206,13 +203,13 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="calc-comment col-lg-12">
+                                            <div class="calc-comment col-lg-12 calc-tablet-size">
                                                 <label for="commentFirst">Ваш комментарий</label>
                                                 <textarea name="comment" id="commentFirst" cols="23" rows="1"></textarea>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="calc-counter col-lg-7">
+                                            <div class="calc-counter col-lg-7 calc-tablet-size">
                                                 <label for="countFirst">Количество</label>
                                                 <div class="counter">
                                                     <div class="minus" id="minus">-</div>
@@ -223,94 +220,213 @@
                                         </div>
                                         <div class="row">
                                             <div class="price col-12"><span class="gray">Итого:</span> <span class="result" id="resultFirst">0</span> руб.</div>
-                                            <div class="col-lg-6 mb100"><button class="orange-button">Отправить рассчет <img src="../../img/arrow-right.png" alt=""></button></div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="box" role="tabpanel" aria-labelledby="box-tab">
-                            <div class="row">
-                                <div class="visual col-lg-5 col-md-4"><img src="../../img/2.png" alt="Превью"></div>
-                                <div class="col-lg-6 offset-lg-1 col-md-8">
-                                    <form name="secondCalculator" id="secondCalculator">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6 calc-size">
-                                                <label for="width-box calc-tablet-size">Ширина, мм</label>
-                                                <input id="width-box" type="number" value="1000">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 calc-size">
-                                                <label for="height-box calc-tablet-size">Высота, мм</label>
-                                                <input id="height-box" type="number" name="height" value="1000">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="calc-font">
-                                                    <label for="variable">Вариант</label>
-                                                    <select name="variable" id="variable">
-                                                        <option value="1">Пластиковый световой короб</option>
-                                                        <option value="2">Световой короб фигурный</option>
-                                                        <option value="3">Композитный световой короб</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="row">
-                                                    <div class="calc-mail col-lg-6">
-                                                        <label for="mailSecond" >Email</label>
-                                                        <input id="mailSecond" type="email">
-                                                    </div>
-                                                    <div class="calc-phone col-lg-6">
-                                                        <label for="phoneSecond">Ваш телефон</label>
-                                                        <input id="phoneSecond" type="text">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="calc-comment col-lg-12">
-                                                <label for="commentSecond">Ваш комментарий</label>
-                                                <textarea name="comment" id="commentSecond" cols="23" rows="1"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="calc-counter col-lg-7">
-                                                <label for="countFirst">Количество</label>
-                                                <div class="counter">
-                                                    <div class="minus" id="minusSec">-</div>
-                                                    <input class="count-pieces" id="countSecond" style="text-align: center;" min="1" type="number" value="1">
-                                                    <div class="plus" id="plusSec">+</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="price col-lg-12"><span class="gray">Итого:</span> <span class="result" id="resultSecond">0</span> руб.</div>
                                             <div class="col-lg-6 mb100"><button class="orange-button">Отправить рассчет <img src="../../img/arrow-right.png" alt=">"></button></div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p>
+                                        Студия Рекламы КреативПРО изготавливает световые и несветовые буквы для создания привлекающих внимание вывесок. 
+                                        Эффективность такой рекламы давно известна: крупный текст (особенно при наличии подсветки) виден издалека. 
+                                        Возможно изготовление объёмной вывески с подсветкой в виде логотипа и/или наименования компании. 
+                                    </p>
+                                    <p>
+                                       <b>У нас можно заказать световые и несветовые буквы всех видов:</b>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <b>Вывеска с лицевой подсветкой.</b> <br>
+                                            Светодиоды направлены на фронтальную поверхность букв.
+                                        </li>
+                                        <li>
+                                            <b>Вывеска с контражурным свечением.</b> <br>
+                                            Световые элементы размещаются за текстом, подсвечивая контур.
+                                        </li>
+                                        <li>
+                                            <b>Псевдообъёмные буквы.</b> <br>
+                                            Визуальный объём создаётся за счёт толщины материала – не более 10 см.
+                                        </li>              
+                                        <li>
+                                            <b>Объёмные буквы (без подсветки).</b> <br>
+                                            Несветовые вывески размещают внутри помещения с ярким освещением.
+                                        </li>
+                                    </ul>
+                
+                                    <p>
+                                        При изготовлении световых букв мы применяем только подсветку с высокой энергоэффективностью (они потребляют минимум электроэнергии 
+                                        при максимальной яркости свечения). Благодаря этому удаётся максимально снизить счета за электроэнергию.
+                                    </p>
+                                    <p>
+                                        Берём в производство макеты заказчика или разрабатываем дизайн самостоятельно (для получения списка требований нашего 
+                                        производственного отдела – свяжитесь с нашими менеджерами).
+                                    </p>
+                                    <h4>Собственный цех по производству световых и несветовых вывесок</h4>
+                                    <p>
+                                        Студия Рекламы КреативПРО работает с 2015 года. За этот период мы наработали отличную репутацию и очень дорожим ей. 
+                                        Поэтому мы тщательно следим за качеством работ на каждом этапе:
+                                    </p>
+                                    <ol>
+                                        <li>При заказе изготовления – бесплатное создание дизайна рекламного носителя.</li>
+                                        <li>Используем качественные материалы, которые длительное время не теряют свойств.</li>
+                                        <li>Гарантируем низкую стоимость изготовления вывесок с подсветкой и без неё.</li>
+                                        <li>Даём гарантию на работоспособность изделия не зависимо от погодных условий.</li>
+                                        <li>Строго соблюдаем правила крепления рекламных носителей на фасады зданий.</li>
+                                        <li>Доставляем заказ бесплатно по Азову и Ростову-на-Дону, а также постоянным клиентам.</li>
+                                    </ol>
+                                    <p>
+                                        Чтобы получить консультацию наших специалистов или расчёт стоимости световых и несветовых букв – отправьте заявку через сайт или позвоните! 
+                                        Для предварительного расчёта конструкции – введите соответствующие параметры в форму.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="box" role="tabpanel" aria-labelledby="box-tab">
+                            
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="visual col-lg-5 col-md-4"><img src="../../img/2.png" alt="Превью"></div>
+                                        <div class="col-lg-6 offset-lg-1 col-md-8">
+                                            <form name="secondCalculator" id="secondCalculator">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 calc-tablet-size firs-row-calc">
+                                                        <label for="width-box calc-tablet-size">Ширина, мм</label>
+                                                        <input id="width-box" type="number" value="1000">
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 calc-tablet-size firs-row-calc">
+                                                        <label for="height-box calc-tablet-size">Высота, мм</label>
+                                                        <input id="height-box" type="number" name="height" value="1000">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12 calc-tablet-size">
+                                                        <div class="calc-font">
+                                                            <label for="variable">Вариант</label>
+                                                            <select name="variable" id="variable">
+                                                                <option value="1">Пластиковый световой короб</option>
+                                                                <option value="2">Световой короб фигурный</option>
+                                                                <option value="3">Композитный световой короб</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12 calc-tablet-size">
+                                                        <div class="row">
+                                                            <div class="calc-mail col-lg-6">
+                                                                <label for="mailSecond" >Email</label>
+                                                                <input id="mailSecond" type="email">
+                                                            </div>
+                                                            <div class="calc-phone col-lg-6">
+                                                                <label for="phoneSecond">Ваш телефон</label>
+                                                                <input id="phoneSecond" type="text">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="calc-comment col-lg-12 calc-tablet-size">
+                                                        <label for="commentSecond">Ваш комментарий</label>
+                                                        <textarea name="comment" id="commentSecond" cols="23" rows="1"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="calc-counter col-lg-7 calc-tablet-size">
+                                                        <label for="countFirst">Количество</label>
+                                                        <div class="counter">
+                                                            <div class="minus" id="minusSec">-</div>
+                                                            <input class="count-pieces" id="countSecond" style="text-align: center;" min="1" type="number" value="1">
+                                                            <div class="plus" id="plusSec">+</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="price col-lg-12"><span class="gray">Итого:</span> <span class="result" id="resultSecond">0</span> руб.</div>
+                                                    <div class="col-lg-6 mb100"><button class="orange-button">Отправить рассчет <img src="../../img/arrow-right.png" alt=">"></button></div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p>
+                                        Студия Рекламы КреативПРО предлагает изготовление световых коробов (лайтбоксов) для создания недорогих вывесок, 
+                                        а также наружной и интерьерной рекламы. Такие рекламные конструкции оснащены внутренней системой подсветки и 
+                                        всегда выглядят эффектно, поэтому активно используются для привлечения потенциальных клиентов в пункты продаж 
+                                        или оказания услуг.
+                                    </p>
+                                    <p>
+                                       <b>Изготавливаем световые короба на заказ всех типов:</b>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <b>Пластиковые лайтбоксы.</b> <br>
+                                            Стандартные световые короба прямоугольной или квадратной формы.
+                                        </li>
+                                        <li>
+                                            <b>Фигурные лайтбоксы.</b> <br>
+                                            Световые короба вырезанные по очертаниям логотипа или другой фигуры.
+                                        </li>
+                                        <li>
+                                            <b>Композитные лайтбоксы.</b> <br>
+                                            Световые короба с объёмными элементами (инкрустацией).
+                                        </li>                                     
+                                    </ul>
+                
+                                    <p>
+                                        Мы используем только энергоэффективные световые модули при изготовлении лайтбоксов. 
+                                        Это позволяет нам гарантировать заказчиками минимальные счета за электроэнергию даже 
+                                        при круглосуточной работе таких вывесок.
+                                    </p>
+                                    <p>
+                                        Вы можете заказать оформление вывески в нашем дизайнерском отделе или предоставить свой макет 
+                                        (для уточнений требований производственного цеха – свяжитесь с нашими менеджерами). 
+                                    </p>
+                                    <h4>Собственное производство световых коробов (лайтбоксов) </h4>
+                                    <p>
+                                        Благодаря тому, что мы всё производим сами – можем контролировать качество, а также сроки проектов. 
+                                        Несмотря на сложившуюся хорошую репутацию Студии Рекламы КреативПРО – мы постоянно развиваем и улучшаем наш клиентский сервис:
+                                    </p>
+                                    <ol>
+                                        <li>При заказе – делаем бесплатный дизайн рекламной вывески.</li>
+                                        <li>Предоставляем низкие цены на производство лайтбоксов.</li>
+                                        <li>Гарантируем качество и надёжность каждой конструкции.</li>
+                                        <li>Соблюдаем правила крепления рекламы на фасады зданий.</li>
+                                        <li>Предоставляем скидки и бонусы постоянным клиентам.</li>
+                                        <li>Есть бесплатная доставка по Азову и Ростову-на-Дону.</li>
+                                    </ol>
+                                    <p>
+                                        Если у вас есть вопросы – свяжитесь с нашими менеджерами. Они же смогут рассчитать точную стоимость изделия. 
+                                        А чтобы узнать предварительную цену конструкции – заполните поля формы, расположенной ниже.
+                                    </p>             
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="consoles" role="tabpanel" aria-labelledby="consoles-tab">
+                            
                             <div class="row">
-                                <div class="visual col-lg-5 col-md-4"><img src="../../img/3.png" alt="Превью"></div>
-                                <div class="col-lg-6 offset-lg-1 col-md-8">
+                                <div class="visual col-lg-5"><img src="../../img/3.png" alt="Превью"></div>
+                                <div class="col-lg-6 offset-lg-1 ">
                                     <form name="thirdCalculator" id="thirdCalculator">
                                         <div class="row">
-                                            <div class="calc-size col-lg-6 col-md-6">
-                                                <label for="width-consoles calc-tablet-size">Ширина, мм</label>
+                                            <div class="calc-size col-lg-6 calc-tablet-size firs-row-calc">
+                                                <label for="width-consoles">Ширина, мм</label>
                                                 <input id="width-consoles" type="number" name="width" value="1000">
                                             </div>
-                                            <div class="calc-size col-lg-6 col-md-6">
-                                                <label for="height-consoles calc-tablet-size">Высота, мм</label>
+                                            <div class="calc-size col-lg-6 calc-tablet-size firs-row-calc">
+                                                <label for="height-consoles">Высота, мм</label>
                                                  <input id="height-consoles" type="number" name="height" value="1000">
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="calc-font col-lg-12">
+                                            <div class="calc-font col-lg-12 calc-tablet-size">
                                                 <label for="variableThird">Вариант</label>
                                                 <select name="variable" id="variableThird">
                                                     <option value="1">Консоль не световая</option>
@@ -321,23 +437,23 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="calc-mail col-lg-6">
+                                            <div class="calc-mail col-lg-6 calc-tablet-size">
                                                 <label for="mailThird">Email</label>
                                                 <input id="mailThird" type="email">
                                             </div>
-                                            <div class="calc-phone col-lg-6">
+                                            <div class="calc-phone col-lg-6 calc-tablet-size">
                                                 <label for="phoneThird">Ваш телефон</label>
                                                 <input id="phoneThird" type="text">
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="calc-comment col-lg-12">
+                                            <div class="calc-comment col-lg-12 calc-tablet-size">
                                                 <label for="commentThird">Ваш комментарий</label>
                                                 <textarea name="comment" id="commentThird" cols="23" rows="1"></textarea>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="calc-counter col-lg-7">
+                                            <div class="calc-counter col-lg-7 calc-tablet-size">
                                                 <label for="countThird">Количество</label>
                                                 <div class="counter">
                                                     <div class="minus" id="minusThird">-</div>
@@ -348,145 +464,321 @@
                                         </div>
                                         <div class="row">
                                             <div class="price col-lg-12">Итого: <span class="result" id="resultThird">0</span> руб.</div>
-                                            <div class="col-lg-6 mb100"><button class="orange-button">Отправить рассчет <img src="../../img/arrow-right.png" alt=""></button></div>
+                                            <div class="col-lg-6 mb100"><button class="orange-button">Отправить рассчет<img src="../../img/arrow-right.png" alt=">"></button></div>
                                         </div>
                                     </form>    
                                 </div>
                             </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p>
+                                        Студия Рекламы КреативПРО изготавливает световые и несветовые консоли (панель-кронштейны). 
+                                        Такие вывески обычно имеют две видимые поверхности (с обеих сторон), а крепятся перпендикулярно 
+                                        к зданиям или к столбам, но также используются и внутри помещений (в ТЦ). Эти особенности 
+                                        конструкций делают информационные или рекламные консоли более заметными, чем стандартные 
+                                        решения (объёмные буквы или лайтбоксы). Но так как у панель-кронштейнов небольшие размеры – 
+                                        обычно их используют в качестве дополнительной рекламной поверхности.
+                                    </p>
+                                    <p>
+                                       <b>Предлагаем изготовление двухсторонних и односторонних рекламных консолей всех видов:</b>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <b>Панель-кронштейны несветовые.</b> <br>
+                                            Стандартные консоли без подсветки (для помещений).
+                                        </li>
+                                        <li>
+                                            <b>Панель-кронштейны световые.</b> <br>
+                                            Прямоугольные, квадратные и круглые консоли с подсветкой.
+                                        </li>
+                                        <li>
+                                            <b>Панель-кронштейны сложной формы.</b> <br>
+                                            Фигурные консоли, вырезанные по контуру логотипа или любого символа.
+                                        </li>              
+                                        <li>
+                                            <b>Панель-кронштейны композитные со световыми элементами.</b> <br>
+                                            Консоли с инкрустацией и дополнением динамической подсветки.
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        При производстве панель-кронштейнов для монтажа на улице используются более прочные и устойчивые к 
+                                        перепадам температур материалы, чем для торцевых вывесок внутри помещений.
+                                    </p>
+                                    <h4>Изготовление световых и несветовых консолей на заказ</h4>
+                                    <p>
+                                        Все рекламные конструкции, заказанные в КреативПРО – изготавливаются на собственном производстве. 
+                                        Это значит, что мы максимально контролируем соблюдение сроков по каждой заявке и точно знаем, 
+                                        какие были использованы материалы. Также мы предоставляем клиентам удобные условия сотрудничества:
+                                    </p>
+                                    <ol>
+                                        <li>При заказе вывески – вы получите дизайн в подарок!</li>
+                                        <li>У нас действительно низкие цены на изготовление консолей.</li>
+                                        <li>Даём гарантию на качество и надёжность каждой вывески.</li>
+                                        <li>Соблюдаем правила размещения панель-кронштейнов.</li>
+                                        <li>Всегда дарим скидки и бонусы постоянным заказчикам.</li>
+                                        <li>Бесплатно доставляем заказы по Азову и Ростову-на-Дону.</li>
+                                    </ol>
+                                    <p>
+                                        Для получения более подробной информации по любому вопросу или точной стоимости торцевой консоли – позвоните или отправьте 
+                                        заявку через сайт. Также вы можете самостоятельно рассчитать предварительную цену конструкции – для этого заполните поля 
+                                        формы, расположенной ниже.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="table" role="tabpanel" aria-labelledby="table-tab">
+                            
                             <div class="row">
-                                <div class="visual col-lg-5 col-md-4"><img src="../../img/4.png" alt="Превью"></div>
-                                <div class="col-lg-6 offset-lg-1 col-md-8">
-                                    <form name="fourthCalculator" id="fourthCalculator">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6 calc-size">
-                                                <label for="width-table calc-tablet-size">Ширина, мм</label>
-                                                <input id="width-table" name="width" value="1000">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 calc-size">
-                                                <label for="height-table calc-tablet-size">Высота, мм</label>
-                                                <input id="height-table" name="height" value="1000">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="calc-variable col-lg-12">
-                                                <label for="variableFourth">Вариант</label>
-                                                <select name="variable" id="variableFourth">
-                                                    <option value="1">Стандартная пластиковая табличка</option>
-                                                    <option value="2">Таблички с профилем</option>
-                                                    <option value="3">Табличка из акрилового стекла</option>
-                                                    <option value="4">Табличка с гравировкой</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-6 calc-mail">
-                                                <label for="mailFourth">Email</label>
-                                                <input id="mailFourth" type="email">
-                                            </div>
-                                            <div class="col-lg-6 calc-phone">
-                                                <label for="phoneFourth">Ваш телефон</label>
-                                                <input id="phoneFourth" type="text">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-12 calc-comment">
-                                                <label for="commentFourth">Ваш комментарий</label>
-                                                <textarea name="comment" id="commentFourth" cols="23" rows="1"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="calc-counter col-lg-7">
-                                                <label for="countFourth">Количество</label>
-                                                <div class="counter">
-                                                    <div class="minus" id="minusFourth">-</div>
-                                                    <input class="count-pieces" id="countFourth" style="text-align: center;" min="1" type="number" value="1">
-                                                    <div class="plus" id="plusFourth">+</div>
+                                <div class="col-lg-12">
+                                    <div class="row calculator">
+                                        <div class="visual col-lg-5 col-md-4"><img src="../../img/4.png" alt="Превью"></div>
+                                        <div class="col-lg-6 offset-lg-1 col-md-8">
+                                            <form name="fourthCalculator" class="calculator" id="fourthCalculator">
+                                                <div class="row calc-size">
+                                                    <div class="col-lg-6 col-md-6 calc-tablet-size firs-row-calc">
+                                                        <label for="width-table">Ширина, мм</label>
+                                                        <input id="width-table" name="width" value="1000">
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 calc-tablet-size firs-row-calc">
+                                                        <label for="height-table">Высота, мм</label>
+                                                        <input id="height-table" name="height" value="1000">
+                                                    </div>
                                                 </div>
-                                            </div>
+                                                <div class="row">
+                                                    <div class="calc-variable col-lg-12 calc-tablet-size">
+                                                        <label for="variableFourth">Вариант</label>
+                                                        <select name="variable" id="variableFourth">
+                                                            <option value="1">Стандартная пластиковая табличка</option>
+                                                            <option value="2">Таблички с профилем</option>
+                                                            <option value="3">Табличка из акрилового стекла</option>
+                                                            <option value="4">Табличка с гравировкой</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-6 calc-mail calc-tablet-size ">
+                                                        <label for="mailFourth">Email</label>
+                                                        <input id="mailFourth" type="email">
+                                                    </div>
+                                                    <div class="col-lg-6 calc-phone calc-tablet-size ">
+                                                        <label for="phoneFourth">Ваш телефон</label>
+                                                        <input id="phoneFourth" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12 calc-comment calc-tablet-size">
+                                                        <label for="commentFourth">Ваш комментарий</label>
+                                                        <textarea name="comment" id="commentFourth" cols="23" rows="1"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="calc-counter col-lg-7 calc-tablet-size .firs-row-calc">
+                                                        <label for="countFourth">Количество</label>
+                                                        <div class="counter">
+                                                            <div class="minus" id="minusFourth">-</div>
+                                                            <input class="count-pieces" id="countFourth" style="text-align: center;" min="1" type="number" value="1">
+                                                            <div class="plus" id="plusFourth">+</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="price col-lg-12"><span class="gray">Итого:</span> <span class="result" id="resultFourth">0</span> руб.</div>    
+                                                    <div class="col-lg-6 mb100"><button class="orange-button">Отправить рассчет <img src="../../img/arrow-right.png" alt=">"></button></div>
+                                                </div>
+                                            </form>
                                         </div>
-                                        <div class="row">
-                                            <div class="price col-lg-12"><span class="gray">Итого:</span> <span class="result" id="resultFourth">0</span> руб.</div>    
-                                            <div class="col-lg-6 mb100"><button class="orange-button">Отправить рассчет <img src="../../img/arrow-right.png" alt=">"></button></div>
-                                        </div>
-                                    </form>
+                                    </div>
+                                </div>
+                            </div>  
+                            
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p>
+                                        Студия Рекламы КреативПРО предлагает изготовление информационных табличек и указателей для создания лаконичных вывесок, 
+                                        которые размещаются на двери или на стене рядом с входом. Основные варианты использования таких изделий: для предоставления 
+                                        информации с данными организации (адресные), для объявления режима работы (режимные), для кабинетов и офисов (дверные) и 
+                                        для столов руководителей (настольные). Другой способ использования – для изготовления информационных указателей внутри 
+                                        помещений (магазинов, Торговых Центров и т.д.). 
+                                    </p>
+                                    <p>
+                                       <b>Мы изготавливаем режимные и адресные таблички любого типа:</b>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <b>Стандартные пластиковые таблички.</b> <br>
+                                            Самый популярный и бюджетный вариант.
+                                        </li>
+                                        <li>
+                                            <b>Таблички с профилем.</b> <br>
+                                            С небольшими бортиками для придания солидности.
+                                        </li>
+                                        <li>
+                                            <b>Таблички из акрилового стекла.</b> <br>
+                                            Акрил может быть прозрачным или матовым.
+                                        </li>              
+                                        <li>
+                                            <b>Металлические таблички с гравировкой.</b> <br>
+                                            Наиболее солидный вариант.
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        В зависимости от пожеланий заказчика – изделия могут крепиться непосредственно на 
+                                        поверхность или на небольшом расстоянии от него (для этого используются специальные крепления).
+                                    </p>
+                                    <h4>Адресные и режимные таблички на заказ: быстро и недорого </h4>
+                                    <p>
+                                        У нас всегда в наличии есть необходимые материалы для производства любых табличек и указателей. 
+                                        Вы можете заказать изготовление по собственному макету или воспользоваться услугами наших дизайнеров. 
+                                        Обращайтесь, мы стараемся, чтобы каждому заказчику было комфортно с нами работать:
+                                    </p>
+                                    <ol>
+                                        <li>Делаем информационные таблички дёшево.</li>
+                                        <li>Соблюдаем сроки исполнения заказов.</li>
+                                        <li>Используем качественные материалы.</li>
+                                        <li>Постоянным клиентам – бонусы и скидки.</li>
+                                        <li>Строго соблюдаем правила крепления рекламных носителей на фасады зданий.</li>
+                                    </ol>
+                                    <p>
+                                        Чтобы максимально быстро и просто заказать адресную табличку или указатели – позвоните или напишите нашим менеджерам. 
+                                        Также они смогут рассчитать вам точную стоимость заказа. 
+                                        А для получения предварительной цены – заполните поля формы, расположенной ниже.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="led" role="tabpanel" aria-labelledby="led-tab">
+                
                             <div class="row">
-                                <div class="visual col-lg-5 col-md-4"><img src="../../img/5.png" alt="Превью"></div>
-                                <div class="col-lg-6 offset-lg-1 col-md-8">
-                                    <form name="ledTape" class="calculator" id="ledTape">
-                                        <div class="row calc-size">
-                                            <div class="col-lg-6 col-md-6 calc-tablet-size firs-row-calc">
-                                                <label for="width-led">Ширина, cм</label>
-                                                <select id="width-led" name="width">
-                                                    <option value="1">101</option>
-                                                    <option value="2">133</option>
-                                                    <option value="3">165</option>
-                                                    <option value="4">197</option>
-                                                    <option value="5">229</option>
-                                                    <option value="6">261</option>
-                                                    <option value="7">293</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 calc-tablet-size firs-row-calc">
-                                                <label for="height-led">Высота, cм</label>
-                                                <select id="height-led" name="width">
-                                                    <option value="1">21</option>
-                                                    <option value="2">37</option>
-                                                    <option value="3">53</option>
-                                                    <option value="4">69</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="calc-variable col-lg-12 calc-tablet-size">
-                                                <label for="color">Цвет</label>
-                                                <select id="color" name="color">
-                                                    <option value="1">Красный</option>
-                                                    <option value="2">Белый</option>
-                                                    <option value="3">Желтый</option>
-                                                    <option value="4">Синий</option>
-                                                    <option value="5">Трехцветный</option>
-                                                    <option value="6">Семицветный</option>
-                                                    <option value="7">Полноцветный</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-6 calc-mail calc-tablet-size ">
-                                                <label for="mail">Email</label>
-                                                <input id="mailFive" type="email">
-                                            </div>
-                                            <div class="col-lg-6 calc-phone calc-tablet-size ">
-                                                <label for="phone">Ваш телефон</label>
-                                                <input id="phoneFive" type="text">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-12 calc-comment calc-tablet-size">
-                                                <label for="comment">Ваш комментарий</label>
-                                                <textarea name="comment" id="commentFive" cols="23" rows="1"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="calc-counter col-lg-7 calc-tablet-size .firs-row-calc">
-                                                <label for="count">Количество</label>
-                                                <div class="counter">
-                                                    <div class="minus" id="minusFive">-</div>
-                                                    <input class="count-pieces" id="countFive" style="text-align: center;" min="1" type="number" value="1">
-                                                    <div class="plus" id="plusFive">+</div>
+                                <div class="col-lg-12">
+                                    <div class="row calculator">
+                                        <div class="visual col-lg-5 col-md-4"><img src="../../img/5.png" alt="Превью"></div>
+                                        <div class="col-lg-6 offset-lg-1 col-md-8">
+                                            <form name="ledTape" class="calculator" id="ledTape">
+                                                <div class="row calc-size">
+                                                    <div class="col-lg-6 col-md-6 calc-tablet-size firs-row-calc">
+                                                        <label for="width-led">Ширина, cм</label>
+                                                        <select id="width-led" name="width">
+                                                            <option value="1">101</option>
+                                                            <option value="2">133</option>
+                                                            <option value="3">165</option>
+                                                            <option value="4">197</option>
+                                                            <option value="5">229</option>
+                                                            <option value="6">261</option>
+                                                            <option value="7">293</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 calc-tablet-size firs-row-calc">
+                                                        <label for="height-led">Высота, cм</label>
+                                                        <select id="height-led" name="width">
+                                                            <option value="1">21</option>
+                                                            <option value="2">37</option>
+                                                            <option value="3">53</option>
+                                                            <option value="4">69</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                                <div class="row">
+                                                    <div class="calc-variable col-lg-12 calc-tablet-size">
+                                                        <label for="color">Цвет</label>
+                                                        <select id="color" name="color">
+                                                            <option value="1">Красный</option>
+                                                            <option value="2">Белый</option>
+                                                            <option value="3">Желтый</option>
+                                                            <option value="4">Синий</option>
+                                                            <option value="5">Трехцветный</option>
+                                                            <option value="6">Семицветный</option>
+                                                            <option value="7">Полноцветный</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-6 calc-mail calc-tablet-size ">
+                                                        <label for="mail">Email</label>
+                                                        <input id="mailFive" type="email">
+                                                    </div>
+                                                    <div class="col-lg-6 calc-phone calc-tablet-size ">
+                                                        <label for="phone">Ваш телефон</label>
+                                                        <input id="phoneFive" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12 calc-comment calc-tablet-size">
+                                                        <label for="comment">Ваш комментарий</label>
+                                                        <textarea name="comment" id="commentFive" cols="23" rows="1"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="calc-counter col-lg-7 calc-tablet-size .firs-row-calc">
+                                                        <label for="count">Количество</label>
+                                                        <div class="counter">
+                                                            <div class="minus" id="minusFive">-</div>
+                                                            <input class="count-pieces" id="countFive" style="text-align: center;" min="1" type="number" value="1">
+                                                            <div class="plus" id="plusFive">+</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="price col-lg-12"><span class="gray">Итого:</span> <span class="result" id="result">0</span> руб.</div>    
+                                                    <div class="col-lg-6 mb100"><button class="orange-button">Отправить рассчет <img src="../../img/arrow-right.png" alt=">"></button></div>
+                                                </div>
+                                            </form>
                                         </div>
-                                        <div class="row">
-                                            <div class="price col-lg-12"><span class="gray">Итого:</span> <span class="result" id="result">0</span> руб.</div>    
-                                            <div class="col-lg-6 mb100"><button class="orange-button">Отправить рассчет <img src="../../img/arrow-right.png" alt=">"></button></div>
-                                        </div>
-                                    </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p>
+                                        Студия Рекламы КреативПРО предлагает изготовление информационных табличек и указателей для создания лаконичных вывесок, 
+                                        которые размещаются на двери или на стене рядом с входом. Основные варианты использования таких изделий: для предоставления 
+                                        информации с данными организации (адресные), для объявления режима работы (режимные), для кабинетов и офисов (дверные) и 
+                                        для столов руководителей (настольные). Другой способ использования – для изготовления информационных указателей внутри 
+                                        помещений (магазинов, Торговых Центров и т.д.). 
+                                    </p>
+                                    <p>
+                                       <b>На нашем производстве может быть изготовлена любая светодиодная реклама:</b>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <b>Монохромная бегущая строка.</b> <br>
+                                            Светодиоды могут быть только одного цвета: красного, белого, жёлтого, синего.
+                                        </li>
+                                        <li>
+                                            <b>Трёхцветная бегущая строка.</b> <br>
+                                            В панели может быть три цвета светодиодов из доступных: красного, белого, жёлтого, синего.
+                                        </li>
+                                        <li>
+                                            <b>Семицветная бегущая строка.</b> <br>
+                                            В таких панелях установлены светодиоды семи цветов: красного, белого, жёлтого, синего, зелёного, голубого, фиолетового.
+                                        </li>              
+                                        <li>
+                                            <b>Полноцветная бегущая строка.</b> <br>
+                                            Самые яркие и красочные панели с возможностью воспроизведения всех цветов RGB палитры.
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        При всей эффектности светодиодных вывесок – энергопотребление у таких экранов низкое.
+                                    </p>
+                                    <h4>Собираем бегущие строки и LED-Экраны на собственном производстве</h4>
+                                    <p>
+                                        Мы работаем так, чтобы заказчики становились постоянными и рекомендовали наши услуги своим бизнес-партнёрам. 
+                                        Для этого Студия Рекламы КреативПРО постоянно улучшает клиентский сервис:
+                                    </p>
+                                    <ol>
+                                        <li>Предоставляем низкие цены на бегущие строки и LED-Экраны.</li>
+                                        <li>Используем надёжные светодиоды, сохраняющие яркость.</li>
+                                        <li>Даём гарантию на качество и надёжность каждой панели.</li>
+                                        <li>Дарим скидки и бонусы постоянным заказчикам.</li>
+                                        <li>Бесплатно доставляем заказы по Азову и Ростову-на-Дону.</li>
+                                    </ol>
+                                    <p>
+                                        Чтобы получить дополнительную информацию или точную стоимость светодиодной панели для решения ваших задач – 
+                                        свяжитесь с нашими менеджерами. Также вы можете самостоятельно рассчитать предварительную цену вывески – 
+                                        для этого заполните поля формы, расположенной ниже.
+                
+                                    </p>
                                 </div>
                             </div>
                         </div>
