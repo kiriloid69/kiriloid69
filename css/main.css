@@ -266,7 +266,7 @@ body {
 
 header {
   min-height: 100px;
-  padding: 30px 0;
+  padding: 30px 0 15px;
   border-bottom: 1px solid #ebedec;
   position: fixed;
   background: #f8f9fa;
@@ -276,6 +276,10 @@ header {
 
 .logo {
   width: 135px;
+}
+
+.wa {
+  width: 25px;
 }
 
 .orange {
@@ -304,7 +308,7 @@ header {
 
 .phone {
   text-align: center;
-  margin-top: -5px;
+  margin-top: -18px;
   border-left: 1px solid #ebedec;
   padding-left: 20px;
 }
@@ -312,7 +316,7 @@ header {
   color: #182333;
 }
 .phone .phone-number {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
 }
 .phone .order-call {
@@ -608,10 +612,14 @@ header {
   }
 
   .phone .phone-number {
-    font-size: 13px;
+    font-size: 10px;
   }
   .phone .order-call {
-    font-size: 13px;
+    font-size: 8px;
+  }
+
+  .wa {
+    width: 20px;
   }
 
   .main-page {
@@ -749,7 +757,8 @@ header {
 }
 @media screen and (max-width: 768px) {
   .phone {
-    margin-top: 0;
+    border-left: none;
+    padding-left: 0;
   }
 
   .manager-mobile {
@@ -982,12 +991,20 @@ header {
   }
 }
 @media screen and (max-width: 375px) {
+  .wa {
+    width: 15px;
+  }
+
   .phone .phone-number img {
     display: none;
   }
 
+  .phone {
+    margin-top: -15px;
+    font-size: 12px;
+  }
   .phone .phone-number {
-    font-size: 10px;
+    font-size: 9px;
   }
 
   .nav-item .nav-link {
