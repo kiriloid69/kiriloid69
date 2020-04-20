@@ -995,6 +995,12 @@ header {
     width: 15px;
   }
 
+  .society svg {
+    margin-right: 15px;
+    margin-bottom: 20px;
+    width: 50px !important;
+  }
+
   .phone .phone-number img {
     display: none;
   }
