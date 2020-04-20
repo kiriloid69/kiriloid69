@@ -219,7 +219,7 @@ function calcLightConsole() {
 
         picture = photo[type-1];
 
-        if (width * height <= 1000000)
+        if (width * height < 1000000)
             resultThird = price[type-1][1] * count;
         else
             resultThird = (price[type-1][0] * width * height) / 1000000 * count;
