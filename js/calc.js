@@ -5,7 +5,7 @@
 
 function calcLightLetters() {
     const form = document.querySelector('#firstCalculator');
-    let letters, height, font, type, resultFirst, add, deduct, count;
+    let letters, height, font, type, resultFirst, add, deduct, count, picture;
 
     getValues();
     counter();
@@ -34,6 +34,7 @@ function calcLightLetters() {
         add = document.querySelector('#plus');
         deduct = document.querySelector('#minus');
         count = document.querySelector('#countFirst').value;
+        picture = document.getElementById('img-calc-first').src;
     }
 
 
@@ -64,18 +65,26 @@ function calcLightLetters() {
             [55, 69, 74]
         ];
 
+        let photo = [
+            "../../img/1-1.png", "../../img/1-2.png", "../../img/1-3.png", "../../img/1-4.png", "../../img/1-5.png"
+        ]
+
         resultFirst = letters.replace(/ /g, "").length * height * price[type-1][font-1] * count;
+
+        picture = photo[type-1];
+
     }
 
     function showResult() {
         const output = document.querySelector("#resultFirst");
         output.textContent = resultFirst;
+        document.getElementById('img-calc-first').src = picture;
     }
 }
 
 function calcLightBox() {
     const form = document.querySelector('#secondCalculator');
-    let width, height, type,  resultSecond, add, deduct, count;
+    let width, height, type,  resultSecond, add, deduct, count, picture;
 
     getValuesSec();
     counterSec();
@@ -129,6 +138,12 @@ function calcLightBox() {
             [13800,6900]
         ];
 
+        let photo = [
+            "../../img/2-1.png", "../../img/2-2.png", "../../img/2-3.png"
+        ]
+
+        picture = photo[type-1];
+
         if (width * height <= 1000000)
             resultSecond = price[type-1][1] * count;
         else
@@ -138,12 +153,13 @@ function calcLightBox() {
     function showResultSec() {
         const output = document.querySelector("#resultSecond");
         output.textContent = resultSecond;
+        document.getElementById('img-calc-second').src = picture;
     }
 }
 
 function calcLightConsole() {
     const form = document.querySelector('#thirdCalculator');
-    let width, height, type,  resultThird, add, deduct, count;
+    let width, height, type,  resultThird, add, deduct, count, picture;
 
     getValuesThird();
     counterThird();
@@ -197,6 +213,12 @@ function calcLightConsole() {
             [18000, 10000]
         ];
 
+        let photo = [
+            "../../img/3-1.png", "../../img/3-2.png", "../../img/3-3.png", "../../img/3-4.png"
+        ]
+
+        picture = photo[type-1];
+
         if (width * height <= 1000000)
             resultThird = price[type-1][1] * count;
         else
@@ -206,12 +228,13 @@ function calcLightConsole() {
     function showResultThird() {
         const output = document.querySelector("#resultThird");
         output.textContent = resultThird;
+        document.getElementById('img-calc-third').src = picture;
     }
 }
 
 function calcTable() {
     const form = document.querySelector('#fourthCalculator');
-    let width, height, type, resultFourth, add, deduct, count;
+    let width, height, type, resultFourth, add, deduct, count, picture;
 
     getValuesFourth();
     counterFourth();
@@ -266,6 +289,12 @@ function calcTable() {
             [10,10]
         ];
 
+        let photo = [
+            "../../img/4-1.png", "../../img/4-2.png", "../../img/4-3.png", "../../img/4-4.png"
+        ]
+
+        picture = photo[type-1];
+
         if (width * height <= 1000000)
             resultFourth = price[type-1][1] * count;
         else
@@ -275,13 +304,14 @@ function calcTable() {
     function showResultFourth() {
         const output = document.querySelector("#resultFourth");
         output.textContent = resultFourth;
+        document.getElementById('img-calc-four').src = picture;
     }
 }
 
 
 function calcLedTape() {
     const form = document.querySelector('#ledTape');
-    let width, height, color, result, add, deduct, count;
+    let width, height, color, result, add, deduct, count, picture;
 
     getValuesFive();
     counterFive();
@@ -329,9 +359,11 @@ function calcLedTape() {
     }
 
     function calcResultFive() {
-        let width = [3, 4, 5, 6, 7, 8, 9];
-        let height = [1, 2, 3, 4];
-        let color = [750, 1000, 1000, 1000, 1000, 1100, 1200, 1600];
+
+
+        width = [3, 4, 5, 6, 7, 8, 9];
+        height = [1, 2, 3, 4];
+        color = [750, 1000, 1000, 1000, 1000, 1100, 1200, 1600];
 
         result =  width[numWidth-1] * height[numHeight-1] * color[typeColor-1]; //коэф.ширины*коэф.высоты*коэф.цвета
         result += Math.ceil((width[numWidth-1] * height[numHeight-1]) / 9) * 1200;  //округлить в большую сторону((коэф.шир*коэф.выс)/9)*1200
@@ -358,12 +390,21 @@ function calcLedTape() {
             }
         }   
 
-        result *= count;    
+        result *= count; 
+        
+        let photo = [
+            "../../img/5-1.png", "../../img/5-2.png", "../../img/5-3.png", "../../img/5-4.png", "../../img/5-5.png", "../../img/5-6.png", "../../img/5-7.png"
+        ]
+
+        picture = photo[typeColor - 1];
+        console.log(picture);
+
     }
 
     function showResultFive() {
         const output = document.querySelector("#result");
         output.textContent = result;
+        document.getElementById('img-calc-five').src = picture;
     }
 }
 
